@@ -1,0 +1,554 @@
+[
+  {
+    "source": "/contact-1",
+    "destination": "/contact"
+  },
+  {
+    "source": "/store/paintings",
+    "destination": "/store"
+  },
+  {
+    "source": "/store/stickers",
+    "destination": "/store#stickers"
+  },
+  {
+    "source": "/store/p/heart-1",
+    "destination": "/store/heart"
+  },
+  {
+    "source": "/store/p/heart-print-8x10",
+    "destination": "/store/heart"
+  },
+  {
+    "source": "/store/p/vision",
+    "destination": "/store/vision"
+  },
+  {
+    "source": "/store/p/vision-print-8x10-1",
+    "destination": "/store/vision"
+  },
+  {
+    "source": "/store/p/cosmic-child",
+    "destination": "/store/cosmic-child"
+  },
+  {
+    "source": "/store/p/cosmic-child-print-8x10",
+    "destination": "/store/cosmic-child"
+  },
+  {
+    "source": "/store/p/portal",
+    "destination": "/store/portal"
+  },
+  {
+    "source": "/store/p/xreesbokrzfvfux6ezbduiogj9ef54",
+    "destination": "/store/portal"
+  },
+  {
+    "source": "/store/p/duality",
+    "destination": "/store/duality"
+  },
+  {
+    "source": "/store/p/duality-print-8x10",
+    "destination": "/store/duality"
+  },
+  {
+    "source": "/store/p/decay-original-acrylic-art-on-canvas-15x15",
+    "destination": "/store/decay"
+  },
+  {
+    "source": "/store/p/ws6nsivcagh6mx57mjzff6vtfrp415",
+    "destination": "/store/decay"
+  },
+  {
+    "source": "/store/p/trinity-original-acrylic-art-on-canvas-15x15",
+    "destination": "/store/trinity"
+  },
+  {
+    "source": "/store/p/neon-mushroom-art-print",
+    "destination": "/store/trinity"
+  },
+  {
+    "source": "/store/p/zwd7d8s8envs3g5xvirsfiqsw8siaf",
+    "destination": "/store/jar"
+  },
+  {
+    "source": "/store/p/jar-print-8x8",
+    "destination": "/store/jar"
+  },
+  {
+    "source": "/store/p/gamma-ray-16x20",
+    "destination": "/store/gamma-ray"
+  },
+  {
+    "source": "/store/p/gama-ray-print-8x10",
+    "destination": "/store/gamma-ray"
+  },
+  {
+    "source": "/store/p/double-vision-16x20",
+    "destination": "/store/double-vision"
+  },
+  {
+    "source": "/store/p/double-vision-print-8x10",
+    "destination": "/store/double-vision"
+  },
+  {
+    "source": "/store/p/flower-tits-2x3",
+    "destination": "/store/vase"
+  },
+  {
+    "source": "/store/p/vivid-flower-art-prints-in-bust-vase",
+    "destination": "/store/vase"
+  },
+  {
+    "source": "/store/p/pregnant-with-death",
+    "destination": "/store/pregnant-with-death"
+  },
+  {
+    "source": "/store/p/pregnant-with-death-print-8x10",
+    "destination": "/store/pregnant-with-death"
+  },
+  {
+    "source": "/store/p/threshold-gardian",
+    "destination": "/store/threshold-guardian"
+  },
+  {
+    "source": "/store/p/summers-on-shavano-print-8x10",
+    "destination": "/store/summers-on-shavano"
+  },
+  {
+    "source": "/store/p/moon",
+    "destination": "/store/moon"
+  },
+  {
+    "source": "/store/p/birdhouse",
+    "destination": "/store/birdhouse"
+  },
+  {
+    "source": "/store/p/vulva",
+    "destination": "/store/vulva"
+  },
+  {
+    "source": "/store/p/face",
+    "destination": "/store/face"
+  },
+  {
+    "source": "/store/p/traffic",
+    "destination": "/store/traffic"
+  },
+  {
+    "source": "/store/p/kafree",
+    "destination": "/store/kafree"
+  },
+  {
+    "source": "/store/p/transformation-crow",
+    "destination": "/store/transformation-crow"
+  },
+  {
+    "source": "/store/p/warrior-cactus",
+    "destination": "/store/warrior-cactus"
+  },
+  {
+    "source": "/store/p/elder-cactus",
+    "destination": "/store/elder-cactus"
+  },
+  {
+    "source": "/store/p/ouroboros",
+    "destination": "/store/ouroboros"
+  },
+  {
+    "source": "/store/p/fiery-water",
+    "destination": "/store/fiery-water"
+  },
+  {
+    "source": "/store/p/covid-19-self-portrait",
+    "destination": "/store/covid-19-self-portrait"
+  },
+  {
+    "source": "/store/p/rams-skull",
+    "destination": "/store/rams-skull"
+  },
+  {
+    "source": "/store/p/bird",
+    "destination": "/store/bird"
+  },
+  {
+    "source": "/store/p/warrior-program",
+    "destination": "/store/warrior-program"
+  },
+  {
+    "source": "/store/p/anxiety",
+    "destination": "/store/anxiety"
+  },
+  {
+    "source": "/store/p/grip-it-n-rip-it-sticker",
+    "destination": "/store/grip-it-n-rip-it-sticker"
+  },
+  {
+    "source": "/store/p/continuous-vibe-unlocked",
+    "destination": "/store/continuous-vibe-unlocked"
+  },
+  {
+    "source": "/store/p/human-type-sticker",
+    "destination": "/store/human-type-sticker"
+  },
+  {
+    "source": "/store/p/continuous-vibe-smile",
+    "destination": "/store/continuous-vibe-smile"
+  },
+  {
+    "source": "/store/p/snow-flake-cream-soda",
+    "destination": "/store/snow-flake-cream-soda"
+  },
+  {
+    "source": "/store/p/lime-soda",
+    "destination": "/store/lime-soda"
+  },
+  {
+    "source": "/store/p/miller-high-life",
+    "destination": "/store/miller-high-life"
+  },
+  {
+    "source": "/store/p/bubble-up",
+    "destination": "/store/bubble-up"
+  },
+  {
+    "source": "/store/p/kelli-green-club-soda",
+    "destination": "/store/kelli-green-club-soda"
+  },
+  {
+    "source": "/store/p/jolt-electric-blue",
+    "destination": "/store/jolt-electric-blue"
+  },
+  {
+    "source": "/store/p/victory",
+    "destination": "/store/victory"
+  },
+  {
+    "source": "/store/p/cream-soda",
+    "destination": "/store/cream-soda"
+  },
+  {
+    "source": "/store/p/420-strain",
+    "destination": "/store/420-strain"
+  },
+  {
+    "source": "/store/p/diet-dads-root-beer",
+    "destination": "/store/diet-dads-root-beer"
+  },
+  {
+    "source": "/store/p/ballast-point",
+    "destination": "/store/ballast-point"
+  },
+  {
+    "source": "/store/p/tiger",
+    "destination": "/store/tiger"
+  },
+  {
+    "source": "/store/p/sparkys",
+    "destination": "/store/sparkys"
+  },
+  {
+    "source": "/store/p/blueberry-soda",
+    "destination": "/store/blueberry-soda"
+  },
+  {
+    "source": "/store/p/champion-club-soda",
+    "destination": "/store/champion-club-soda"
+  },
+  {
+    "source": "/store/p/cream-swiss-soda-1",
+    "destination": "/store/cream-swiss-soda-1"
+  },
+  {
+    "source": "/store/p/angry-orchard",
+    "destination": "/store/angry-orchard"
+  },
+  {
+    "source": "/store/p/double-cola",
+    "destination": "/store/double-cola"
+  },
+  {
+    "source": "/store/p/red-stripe",
+    "destination": "/store/red-stripe"
+  },
+  {
+    "source": "/store/p/cherry-wake-up-soda",
+    "destination": "/store/cherry-wake-up-soda"
+  },
+  {
+    "source": "/store/p/diet-cola",
+    "destination": "/store/diet-cola"
+  },
+  {
+    "source": "/store/p/two-brothers-brewing-company",
+    "destination": "/store/two-brothers-brewing-company"
+  },
+  {
+    "source": "/store/p/red-robin-root-beer",
+    "destination": "/store/red-robin-root-beer"
+  },
+  {
+    "source": "/store/p/pirate-booty-ginger-ale",
+    "destination": "/store/pirate-booty-ginger-ale"
+  },
+  {
+    "source": "/store/p/orange-soda",
+    "destination": "/store/orange-soda"
+  },
+  {
+    "source": "/store/p/rouge",
+    "destination": "/store/rouge"
+  },
+  {
+    "source": "/store/p/leinenkugels-snowdrift-vanilla-porter",
+    "destination": "/store/leinenkugels-snowdrift-vanilla-porter"
+  },
+  {
+    "source": "/store/p/dragons-milk",
+    "destination": "/store/dragons-milk"
+  },
+  {
+    "source": "/store/p/root-beer",
+    "destination": "/store/root-beer"
+  },
+  {
+    "source": "/store/p/coke",
+    "destination": "/store/coke"
+  },
+  {
+    "source": "/store/p/china-cola",
+    "destination": "/store/china-cola"
+  },
+  {
+    "source": "/store/p/cherry-cola",
+    "destination": "/store/cherry-cola"
+  },
+  {
+    "source": "/store/p/frosty-cola",
+    "destination": "/store/frosty-cola"
+  },
+  {
+    "source": "/store/p/lime-squeeze-soda",
+    "destination": "/store/lime-squeeze-soda"
+  },
+  {
+    "source": "/store/p/guinness",
+    "destination": "/store/guinness"
+  },
+  {
+    "source": "/store/p/grapefruit-soda",
+    "destination": "/store/grapefruit-soda"
+  },
+  {
+    "source": "/store/p/sodium-free-seltzer-water",
+    "destination": "/store/sodium-free-seltzer-water"
+  },
+  {
+    "source": "/store/p/red-umbrella-strawberry-soda",
+    "destination": "/store/red-umbrella-strawberry-soda"
+  },
+  {
+    "source": "/store/p/big-fan-cola",
+    "destination": "/store/big-fan-cola"
+  },
+  {
+    "source": "/store/p/cricket",
+    "destination": "/store/cricket"
+  },
+  {
+    "source": "/store/p/glacial",
+    "destination": "/store/glacial"
+  },
+  {
+    "source": "/store/p/vanilla-cream-soda-1",
+    "destination": "/store/vanilla-cream-soda-1"
+  },
+  {
+    "source": "/store/p/nyc-grape-soda",
+    "destination": "/store/nyc-grape-soda"
+  },
+  {
+    "source": "/store/p/frosty-rootbeer",
+    "destination": "/store/frosty-rootbeer"
+  },
+  {
+    "source": "/store/p/blackberry-soda",
+    "destination": "/store/blackberry-soda"
+  },
+  {
+    "source": "/store/p/vanilla-cream-soda",
+    "destination": "/store/vanilla-cream-soda"
+  },
+  {
+    "source": "/store/p/birch-beer",
+    "destination": "/store/birch-beer"
+  },
+  {
+    "source": "/store/p/diet-jolt-cola",
+    "destination": "/store/diet-jolt-cola"
+  },
+  {
+    "source": "/store/p/lucky-heart-cream-soda",
+    "destination": "/store/lucky-heart-cream-soda"
+  },
+  {
+    "source": "/store/p/reindeer-cola",
+    "destination": "/store/reindeer-cola"
+  },
+  {
+    "source": "/store/p/cream-swiss-soda",
+    "destination": "/store/cream-swiss-soda"
+  },
+  {
+    "source": "/store/p/sun-shine-soda",
+    "destination": "/store/sun-shine-soda"
+  },
+  {
+    "source": "/store/p/07tputz9y33kqzvrmwmh8s67wnanxm",
+    "destination": "/store/07tputz9y33kqzvrmwmh8s67wnanxm"
+  },
+  {
+    "source": "/store/p/brain-child-poster",
+    "destination": "/store"
+  },
+  {
+    "source": "/store/p/heart-poster",
+    "destination": "/store"
+  },
+  {
+    "source": "/store/p/duality-bl",
+    "destination": "/store"
+  },
+  {
+    "source": "/store/p/8x10-heart-poster",
+    "destination": "/store"
+  },
+  {
+    "source": "/store/p/brain-child",
+    "destination": "/store"
+  },
+  {
+    "source": "/gallery/heart",
+    "destination": "/store/heart"
+  },
+  {
+    "source": "/gallery/vision",
+    "destination": "/store/vision"
+  },
+  {
+    "source": "/gallery/cosmic-child",
+    "destination": "/store/cosmic-child"
+  },
+  {
+    "source": "/gallery/portal",
+    "destination": "/store/portal"
+  },
+  {
+    "source": "/gallery/duality",
+    "destination": "/store/duality"
+  },
+  {
+    "source": "/gallery/moon",
+    "destination": "/store/moon"
+  },
+  {
+    "source": "/gallery/behind-the-mask",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/traveler",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/control-tower",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/transformation-crow",
+    "destination": "/store/transformation-crow"
+  },
+  {
+    "source": "/gallery/project-two-trwkt",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/warrior-cactus",
+    "destination": "/store/warrior-cactus"
+  },
+  {
+    "source": "/gallery/warrior-program",
+    "destination": "/store/warrior-program"
+  },
+  {
+    "source": "/gallery/anxiety",
+    "destination": "/store/anxiety"
+  },
+  {
+    "source": "/gallery/ram-skull",
+    "destination": "/store/rams-skull"
+  },
+  {
+    "source": "/gallery/elder-cactus",
+    "destination": "/store/elder-cactus"
+  },
+  {
+    "source": "/gallery/mother-earth",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/ouroboros",
+    "destination": "/store/ouroboros"
+  },
+  {
+    "source": "/gallery/let-there-be-death",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/bird-house",
+    "destination": "/store/birdhouse"
+  },
+  {
+    "source": "/gallery/khafre",
+    "destination": "/store/kafree"
+  },
+  {
+    "source": "/gallery/traffic",
+    "destination": "/store/traffic"
+  },
+  {
+    "source": "/gallery/vulva",
+    "destination": "/store/vulva"
+  },
+  {
+    "source": "/gallery/project-two-hmr39",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/crisper",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/first-dimension",
+    "destination": "/portfolio"
+  },
+  {
+    "source": "/gallery/face",
+    "destination": "/store/face"
+  },
+  {
+    "source": "/gallery/covid19-self-portrait",
+    "destination": "/store/covid-19-self-portrait"
+  },
+  {
+    "source": "/gallery/bird",
+    "destination": "/store/bird"
+  },
+  {
+    "source": "/gallery/fiery-water",
+    "destination": "/store/fiery-water"
+  },
+  {
+    "source": "/gallery",
+    "destination": "/portfolio"
+  }
+]

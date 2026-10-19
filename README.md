@@ -7,7 +7,7 @@ Next.js app with Stripe payments.
 
 ```bash
 npm install
-cp .env.example .env.local   # then add your Stripe test key
+cp .env.example .env.local   # then add your Stripe test keys
 npm run dev                  # http://localhost:3000
 ```
 
@@ -21,14 +21,13 @@ to try checkout without real charges.
 | `/` | The free print funnel landing page (was on systeme.io) |
 | `/store`, `/store/[slug]` | The store. Each painting page offers 5x7 print, 8x10 print, and the original |
 | `/free-print/[slug]` | Funnel size selection: the same product page with the funnel pricing |
-| `/offer/collection` | One-click upsell: the other 4 Open collection prints in 8x10 |
-| `/offer/stickers` | Sticker pack upsell (if they took the collection) or downsell (if they didn't) |
-| `/thank-you` | Order confirmation for both the store and the funnel |
+| `/checkout` | Checkout form (contact, shipping address, card) for the cart, or one funnel print (`?kind=funnel&slug=...`) |
+| `/offer/stickers` | One-click sticker pack upsell, charged to the card from checkout |
+| `/thank-you` | Order success with the receipt (updated when the sticker pack was added) |
 | `/portfolio`, `/bio`, `/contact`, `/cart` | Same as the old Squarespace pages (Gallery is now Portfolio, grouped by the year folders in `public/assets/paintings/`) |
 
-Funnel flow: homepage → pick a print → choose size → Stripe checkout → 4-print upsell → sticker pack
-up/downsell → thank you. The card from checkout is saved so upsells are one click; nothing is ever charged
-twice for the same offer.
+Checkout flow (store cart and free print funnel): checkout form → sticker pack upsell → thank you with receipt.
+The card from checkout is saved so the upsell is one click, and the sticker pack can never be charged twice.
 
 ## Changing things
 
@@ -41,7 +40,7 @@ twice for the same offer.
 - **Page text**: the page files in `src/app/` (e.g. `src/app/page.tsx` for the homepage).
 
 Orders show up in the Stripe Dashboard under Payments with the shipping address. Upsells are separate payments
-tagged with the original checkout session.
+tagged with the original order.
 
 ## Going live
 

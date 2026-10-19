@@ -1,0 +1,1108 @@
+[
+  {
+    "slug": "gate-or",
+    "title": "Gate-or",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/gate-or-bl.jpg",
+        "width": 1056,
+        "height": 1600,
+        "alt": "Gate-or (blacklight)"
+      },
+      {
+        "src": "/assets/paintings/2025-26/gate-or-dl.jpg",
+        "width": 1064,
+        "height": 1600,
+        "alt": "Gate-or (daylight)"
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 194400,
+      "size": "3' x 4' 6\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "hanged-man",
+    "title": "Hanged Man",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/hanged-man-bl.jpg",
+        "width": 970,
+        "height": 1600,
+        "alt": "Hanged Man (blacklight)"
+      },
+      {
+        "src": "/assets/paintings/2025-26/hanged-man-dl.jpg",
+        "width": 935,
+        "height": 1600,
+        "alt": "Hanged Man (daylight)"
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 162000,
+      "size": "2' 6\" x 4' 6\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "king-of-swords",
+    "title": "King of Swords",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/king-of-swords-bl.jpg",
+        "width": 1280,
+        "height": 1600,
+        "alt": "King of Swords (blacklight)"
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "lotus-head",
+    "title": "Lotus Head",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/lotus-head-bl.jpg",
+        "width": 1279,
+        "height": 1600,
+        "alt": "Lotus Head (blacklight)"
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "palm-shaman",
+    "title": "Palm Shaman",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/palm-shaman-bl.jpg",
+        "width": 1600,
+        "height": 1152,
+        "alt": "Palm Shaman (blacklight)"
+      },
+      {
+        "src": "/assets/paintings/2025-26/palm-shaman-dl.jpg",
+        "width": 1600,
+        "height": 1139,
+        "alt": "Palm Shaman (daylight)"
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 220000,
+      "size": "4' 7\" x 3' 4\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "sacred-heart",
+    "title": "Sacred Heart",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/sacred-heart-bl.jpg",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Sacred Heart (blacklight)"
+      },
+      {
+        "src": "/assets/paintings/2025-26/sacred-heart-dl.jpg",
+        "width": 1600,
+        "height": 1600,
+        "alt": "Sacred Heart (daylight)"
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 129600,
+      "size": "3' x 3'",
+      "available": true
+    }
+  },
+  {
+    "slug": "the-horse-and-the-hermit",
+    "title": "The Horse and the Hermit",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/the-horse-and-the-hermit-bl.jpg",
+        "width": 1387,
+        "height": 1600,
+        "alt": "The Horse and the Hermit (blacklight)"
+      },
+      {
+        "src": "/assets/paintings/2025-26/the-horse-and-the-hermit-dl.jpg",
+        "width": 1366,
+        "height": 1600,
+        "alt": "The Horse and the Hermit (daylight)"
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 151200,
+      "size": "3' x 3' 6\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "decay",
+    "title": "Decay",
+    "description": [
+      "Unveil the enchanting world of 'Decay,' where vibrant mushrooms emerge from a skull, illuminating your space with mysterious beauty.",
+      "Bring an evocative piece into your space that inspires curiosity and conversation. This artwork offers a striking focal point that transforms any room."
+    ],
+    "bullets": [
+      "Measures 15\"x15\", ideal for adding a unique touch to smaller spaces.",
+      "Created with high-quality acrylic paints, ensuring long-lasting vibrancy.",
+      "One-of-a-kind piece that captivates with its vivid colors and mysterious subject."
+    ],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/decay-1.jpg",
+        "alt": "Decay",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2025-26/decay-2.jpg",
+        "alt": "Decay",
+        "width": 1569,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "8x8"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 22200,
+      "size": "15\" x 15\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "trinity",
+    "title": "Trinity",
+    "description": [
+      "Immerse yourself in a world of vibrant colors and mystical allure with the original art piece 'Trinity', featuring three glowing mushrooms that captivate the imagination.",
+      "Bring a sense of wonder and magic into your home with this captivating art piece. Let 'Trinity' transform your space into a conversation starter and an oasis of creativity."
+    ],
+    "bullets": [
+      "15\"x15\" acrylic painting on canvas, suited for modern home decor.",
+      "Features three vibrant, glowing mushrooms on a mysterious background.",
+      "Unique, original artwork that adds a touch of mystique to any space."
+    ],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/trinity-1.jpg",
+        "alt": "Trinity",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2025-26/trinity-2.jpg",
+        "alt": "Trinity",
+        "width": 1581,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "8x8"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 22200,
+      "size": "15\" x 15\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "jar",
+    "title": "Jar",
+    "description": [
+      "Engage with nature’s beauty on a microscopic scale with this captivating 8x8 fine art print, featuring neon mushroom spores that pop with vibrant colors.",
+      "Illuminate your space with the charm and curiosity of the microscopic world, transforming any room into a conversation starter."
+    ],
+    "bullets": [
+      "8x8 inch size perfect for compact spaces or gallery walls.",
+      "High-quality fine art print capturing the intricate details of mushroom spores.",
+      "Neon colors bring a vibrant, modern touch to your decor."
+    ],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/jar-1.jpg",
+        "alt": "Jar",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2025-26/jar-2.jpg",
+        "alt": "Jar",
+        "width": 1582,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "8x8"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 22200,
+      "size": "15\" x 15\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "vase",
+    "title": "Vase",
+    "description": [
+      "Imagine transforming your living space into an artful sanctuary with this one-of-a-kind masterpiece, sparking conversations and inspiring creativity every day."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/vase-1.jpg",
+        "alt": "Vase",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2025-26/vase-2.jpg",
+        "alt": "Vase",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 86400,
+      "size": "2' x 3'",
+      "available": true
+    }
+  },
+  {
+    "slug": "threshold-guardian",
+    "title": "Threshold Guardian",
+    "description": [
+      "Transform your space with a striking 8x10 art print that merges modern artistry with ancient symbolism in vivid neon colors.",
+      "This piece transforms any space into a modern art haven, sparking conversation and inspiration with its unique visual story."
+    ],
+    "bullets": [
+      "Vibrant 8x10 art print in bold, neon colors perfect for modern decor.",
+      "Features a headless woman amidst ancient hieroglyphs, combining mystery and intrigue.",
+      "High-quality print material ensures lasting color and clarity."
+    ],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/threshold-guardian-1.jpg",
+        "alt": "Threshold Guardian",
+        "width": 1279,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "original": {
+      "price": 111100,
+      "size": "2' x 2'6\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "summers-on-shavano",
+    "title": "Summers on Shavano",
+    "description": [
+      "Transform your space with this mesmerizing 8x10 neon art print, featuring a vibrantly colored hummingbird drinking from a flower that bursts with life and energy.",
+      "Brighten your living space and bring a touch of nature's wonder indoors with this stunning art piece, sure to captivate and inspire."
+    ],
+    "bullets": [
+      "Vibrant 8x10 art print featuring a neon hummingbird design.",
+      "High-quality print capturing intricate details and vivid colors.",
+      "Perfect for adding a splash of color and energy to any space."
+    ],
+    "images": [
+      {
+        "src": "/assets/paintings/2025-26/summers-on-shavano-1.jpg",
+        "alt": "Summers on Shavano",
+        "width": 1280,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2025-26/summers-on-shavano-dl.jpg",
+        "width": 1292,
+        "height": 1600,
+        "alt": "Summers on Shavano (daylight)"
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "original": {
+      "price": 187200,
+      "size": "3' 3\" x 4'",
+      "available": true
+    }
+  },
+  {
+    "slug": "heart",
+    "title": "Heart",
+    "description": [
+      "\"Heart\" honors the 24/7 work our heart does to keep us alive, recognizing the industrial organ's effort to pump our bodies full of the lifeblood of the universe."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/heart-1.jpg",
+        "alt": "Heart",
+        "width": 1278,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/heart-2.jpg",
+        "alt": "Heart",
+        "width": 1280,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/heart-gallery.jpg",
+        "alt": "Heart",
+        "width": 1066,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/heart-3.jpg",
+        "alt": "Heart",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/heart-4.jpg",
+        "alt": "Heart",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "collection": "open",
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "vision",
+    "title": "Vision",
+    "description": [
+      "\"Vision\" explores the power of perception, focusing on the light of the universe that animates the world around us."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/vision-1.jpg",
+        "alt": "Vision",
+        "width": 1275,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/vision-2.jpg",
+        "alt": "Vision",
+        "width": 1286,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/vision-3.jpg",
+        "alt": "Vision",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "collection": "open",
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "cosmic-child",
+    "title": "Cosmic Child",
+    "description": [
+      "\"Cosmic Child\" displays electric energy feeling alive and pulsating, giving the sense that the subject is connected to something much larger and timeless—a universe that hums beneath the surface of individuality."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/cosmic-child-1.jpg",
+        "alt": "Cosmic Child",
+        "width": 1271,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/cosmic-child-2.jpg",
+        "alt": "Cosmic Child",
+        "width": 1280,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-3.jpg",
+        "alt": "Cosmic Child",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-4.jpg",
+        "alt": "Cosmic Child",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "collection": "open",
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "portal",
+    "title": "Portal",
+    "description": [
+      "\"Portal\" evokes a sense of transition or passage, as if the viewer is peering into a portal or a vortex leading somewhere unknown."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/portal-1.jpg",
+        "alt": "Portal",
+        "width": 1276,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/portal-2.jpg",
+        "alt": "Portal",
+        "width": 1280,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/portal-3.jpg",
+        "alt": "Portal",
+        "width": 1280,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "collection": "open",
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "duality",
+    "title": "Duality",
+    "description": [
+      "\"Duality\" captures the ever-present tension between life and death. That life and death are not merely opposites but layers of the same complex design."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/duality-1.jpg",
+        "alt": "Duality",
+        "width": 1266,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/duality-2.jpg",
+        "alt": "Duality",
+        "width": 1292,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/duality-3.jpg",
+        "alt": "Duality",
+        "width": 1600,
+        "height": 1600
+      },
+      {
+        "src": "/assets/mockups/duality-4.jpg",
+        "alt": "Duality",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "src": "/assets/mockups/duality-5.jpg",
+        "alt": "Duality",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "collection": "open",
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "gamma-ray",
+    "title": "Gamma Ray",
+    "description": [
+      "16”x20”"
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/gamma-ray-1.jpg",
+        "alt": "Gamma Ray",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/gamma-ray-2.jpg",
+        "alt": "Gamma Ray",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "double-vision",
+    "title": "Double Vision",
+    "description": [
+      "16”x20”"
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2023-24/double-vision-1.jpg",
+        "alt": "Double Vision",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/double-vision-2.jpg",
+        "alt": "Double Vision",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "pregnant-with-death",
+    "title": "Pregnant with Death",
+    "description": [
+      "Emerging from this cosmic glow is the Mother Goddess—a transcendent being who represents the ultimate connection between creation and the divine. Her outstretched wings and radiant form embody the sacred link between the giver of life and the creator of all. The skull, carried within her like an unborn child, symbolizes the fundamental truth that to grant life is to also embrace death. In this mesmerizing portrayal, life and death coexist, reminding us that every act of creation inherently bears the promise of an ending."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/pregnant-with-death-1.jpg",
+        "alt": "Pregnant with Death",
+        "width": 1066,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/pregnant-with-death-2.jpg",
+        "alt": "Pregnant with Death",
+        "width": 1066,
+        "height": 1600
+      }
+    ],
+    "printSizes": [
+      "5x7",
+      "8x10"
+    ],
+    "printVersions": [
+      "Daylight",
+      "Blacklight"
+    ],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "moon",
+    "title": "Moon",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/moon-1.jpg",
+        "alt": "Moon",
+        "width": 1271,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "birdhouse",
+    "title": "Birdhouse",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/birdhouse-1.jpg",
+        "alt": "Birdhouse",
+        "width": 1299,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/birdhouse-2.jpg",
+        "alt": "Birdhouse",
+        "width": 1274,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "vulva",
+    "title": "Vulva",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/vulva-1.jpg",
+        "alt": "Vulva",
+        "width": 1297,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/vulva-2.jpg",
+        "alt": "Vulva",
+        "width": 1279,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "face",
+    "title": "Face",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/face-1.jpg",
+        "alt": "Face",
+        "width": 1268,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/face-2.jpg",
+        "alt": "Face",
+        "width": 1313,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "traffic",
+    "title": "Traffic",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/traffic-1.jpg",
+        "alt": "Traffic",
+        "width": 1283,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/traffic-2.jpg",
+        "alt": "Traffic",
+        "width": 1335,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "kafree",
+    "title": "Kafree",
+    "description": [],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/kafree-1.jpg",
+        "alt": "Kafree",
+        "width": 1253,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2021-22/kafree-2.jpg",
+        "alt": "Kafree",
+        "width": 1286,
+        "height": 1600
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "transformation-crow",
+    "title": "Transformation Crow",
+    "description": [
+      "The crow is a symbol of transformation. This canvas has gone through its own transformation. This canvas started as a therapy piece at a time in my life when I was feeling overwhelmed with emotions that I didn’t understand. Painting helps me move through emotions and helps me to see things clearer. After some time I had moved through the emotions and didn’t fell the need to finish the piece in any capacity. So I spray painted over it first with black, It happened to be valentines day when I decided to studied roses for a tattoo I wanted to do on myself. by the end of the day I couldn’t stop seeing roses. So I spray painted a rose on the canvas. This happened the first week I got alone after being in a group for a few months. when at my campsite I started seeing crows. I didn’t realize they were crows, back home crows are way smaller but in the desert these birds looked like stealth bombers doing precise tactical maneuvers in the air. After leaving that spot in quartzite I rejoined some friends in Sedona. Once again I saw two crows gilding through the air. on 2/2/2022 I pulled 2 taro cards asking to make clear the dichotomy within myself. one of the cards happened to be the transformation card. I pulled a card from another deck and it had a black bird on it. It all just felt like coincidence until my friend left a bottle of wine in my bus, I was getting dressed the next morning when I noticed a crow with a crown on the label. Now it was in my house I couldn’t ignore it. I shared this with my friend and she shared with me some pages from an animal medicine book about the meaning of the crow. “The crow is the keeper of sacred law” “The crow sees simultaneously the three fates past present and future” “Crow is an omen of change” “Crow medicine signifies a firsthand knowledge of higher order of right and wrong than that indicated by laws created by human culture” I wanted to honor the message of the crow with this piece. The crows ability to hold balance of all realms."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/transformation-crow-1.jpg",
+        "alt": "Transformation Crow",
+        "width": 1600,
+        "height": 1363
+      }
+    ],
+    "printSizes": []
+  },
+  {
+    "slug": "warrior-cactus",
+    "title": "Warrior Cactus",
+    "description": [
+      "On the same trip that inspired the elder cactus, I looked up at another dyeing cactus and the way it was decaying reminded me of a spartan helmet. In this piece I wanted to depict the warrior side of death. The warrior caries out the will of the king. Death is an inevitable end to the realm and its the warriors job to surrender when the time comes. when we think of warriors we often think of the fight or forward momentum. But the warriors dichotomy is one of push and pull. A wise warrior knows when to retreat or surrender. Both fighting and surrender take strength."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/warrior-cactus-1.jpg",
+        "alt": "Warrior Cactus",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 15400,
+      "size": "11\" x 14\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "elder-cactus",
+    "title": "Elder Cactus",
+    "description": [
+      "I took a micro dose of mushrooms with a friend and we went for a walk in the desert. My intention for this trip was to connect with the part of me that is connected to the all that exists in the future. We came upon a dyeing cactus my friend points out how they become wood when they die. Patches of the green flesh fading in to wood. Death seemingly creeping up from the ground. the base rotting the life around the dying cactus seemingly pulled inward to support there elder. Watching this cactus die reminded me of watching my grandpa die. With the last signs of life leaving through the head surrounded and supported by the love of the people around them. I realize that the future is death. We spend a lot of time planning for the future thinking about where well be, who well be. If you spend to much time thinking about the future you don’t live in the present. Death is a uniting experience. It unites us with the all when we die and it unites the people around us when we die. Enjoy your life while you still have it."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/elder-cactus-1.jpg",
+        "alt": "Elder Cactus",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "ouroboros",
+    "title": "Ouroboros",
+    "description": [
+      "The Ouroboros came into my life during a transitional period. The Ouroboros is one of the oldest symbols that spans cultures. Depicting a serpent or dragon eating its self. Its symbolic for the infinite nature of existence, as well as the cycle of creation and destruction. The serpent consumes its self at the same rate in witch it produces its self. There is a point of unconsciousness in the whole thing where the serpent is unaware it is its self it is consuming. This is similar to the growth process we go through in life. We can only grow at the rate in witch we are able to change and produce new habits. We share a point of unconsciousness as well it doesn’t appear to us that much changes day to day but when you look back a month or a year you can see all the progress you have made. In order to become a new you the old you must die, much like consuming yourself this can be a painful process."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/ouroboros-1.jpg",
+        "alt": "Ouroboros",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "fiery-water",
+    "title": "Fiery Water",
+    "description": [
+      "A friend asked me my astrological sign. I told her I was a Scorpio, she said I was a fiery water sign. I didn’t understand what she meant by this analytically. But it made sense. shortly after this interaction I spent some time alone connecting to myself and painting. In this piece I tried to come to an understanding of what it meant to be a fiery water sign. This painting showed me how despite being opposite polarities fire and water can coexist together. I think what it means to be a fiery water sign is to hold the polarities of life in a balance being able to move between them effortlessly."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/fiery-water-1.jpg",
+        "alt": "Fiery Water",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 15400,
+      "size": "11\" x 14\"",
+      "available": true
+    },
+    "inStore": false
+  },
+  {
+    "slug": "covid-19-self-portrait",
+    "title": "Covid-19 Self Portrait",
+    "description": [
+      "I was working on a self portrait in September 2021 when I contracted Covid-19. Despite the lack of energy, I had a desire to feel normal and not waste my time off from work being sick. So I decided to work on my self portrait painting the way I felt and not the way I looked."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/covid-19-self-portrait-1.jpg",
+        "alt": "Covid-19 Self Portrait",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 33300,
+      "size": "16\" x 20\"",
+      "available": true
+    },
+    "inStore": false
+  },
+  {
+    "slug": "rams-skull",
+    "title": "Rams Skull",
+    "description": [
+      "“Rams skull” Came from the same time in my life as “Anxiety” and “Warrior Program”. Going through the final transition of working a 9-5 to living in a bus my mind was plagued with the demons of self doubt. Once again the horned figure representing the warrior archetype came to me in this form at this time in my life to represent the strength of being able to coexist with your demons. Still moving Forward in your pursuit despite self doubt knowing that you are doing the work you were meant to do."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/rams-skull-1.jpg",
+        "alt": "Rams Skull",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 15400,
+      "size": "11\" x 14\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "bird",
+    "title": "Bird",
+    "description": [
+      "In my personal mythology the bird represents the magician archetype.  The magician sees the unseen realms.  In this depiction of the bird it seemingly blends into the world around it with the use of the same textures."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/bird-1.jpg",
+        "alt": "Bird",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 10000,
+      "size": "12\" x 12\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "warrior-program",
+    "title": "Warrior Program",
+    "description": [
+      "In my personal mythology horned creatures represents the warrior archetype. The grid background represents the digital space. the digital space being a space created purely from electronic signals similarly to the brain. In this piece the horned Figure appears to us as a skull with human lips. the Skull With human lips represents the transition from the physical realm to the spiritual realm. A real Consisting mainly of wave forms similarly to the digital realm being fed waves of alternating current. Hardware being a receiver for signals from satellites. The digital signals being received are symbolic of the spiritual messages from the soul that we receive. The warriors job is to carry out the will of the king the ruler of the real who is counseled by the magician who is connected to the realms beyond. The “Warrior Program” Acknowledges the Warriors connection to the realm beyond through doing work that serves the individuals purpose."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/warrior-program-1.jpg",
+        "alt": "Warrior Program",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 15400,
+      "size": "11\" x 14\"",
+      "available": true
+    }
+  },
+  {
+    "slug": "anxiety",
+    "title": "Anxiety",
+    "description": [
+      "In September 2021 I was finishing up my bus build. One of the final things that had to be done is get the bus towed to have the Breaks fixed. This meant hooking up the past 2.5 years of my life not to mention my future to the back of a tow truck to drive an hour away. my future would literally out of my hands. While communicating with the garage I got Covid-19, witch meant I had to use all of my PTO to quarantine so i had to get the bus towed before I had to go back to work. once the bus left the driveway it was time to clean, as well as pack things up to move into the bus. This piece was me processing my anxiety at the time."
+    ],
+    "bullets": [],
+    "images": [
+      {
+        "src": "/assets/paintings/2021-22/anxiety-1.jpg",
+        "alt": "Anxiety",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "printSizes": [],
+    "original": {
+      "price": 15400,
+      "size": "11\" x 14\"",
+      "available": true
+    }
+  }
+]

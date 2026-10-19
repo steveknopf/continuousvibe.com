@@ -1,0 +1,167 @@
+{
+  "5starsgold": {
+    "src": "/assets/other/five-stars.png",
+    "width": 1438,
+    "height": 316
+  },
+  "heart": {
+    "src": "/assets/paintings/2023-24/heart-1.jpg",
+    "width": 1278,
+    "height": 1600
+  },
+  "screenshot-20230520-091301-instagram": {
+    "src": "/assets/steve/steve-live-painting.jpg",
+    "width": 717,
+    "height": 757
+  },
+  "big-duck-logopng": {
+    "src": "/assets/other/logo-big-duck-canvas.png",
+    "width": 600,
+    "height": 600
+  },
+  "tjoltlogo": {
+    "src": "/assets/other/logo-journal-of-lost-time.png",
+    "width": 1245,
+    "height": 1244
+  },
+  "becomingboarderlesstdn": {
+    "src": "/assets/other/logo-becoming-borderless.png",
+    "width": 1500,
+    "height": 844
+  },
+  "steveshade1x1": {
+    "src": "/assets/steve/steve-portrait-with-collection.jpg",
+    "width": 1500,
+    "height": 1500
+  },
+  "heartmockup1": {
+    "src": "/assets/mockups/heart-print.jpg",
+    "width": 980,
+    "height": 964
+  },
+  "vissionmockup1": {
+    "src": "/assets/mockups/vision-print.jpg",
+    "width": 980,
+    "height": 964
+  },
+  "brainchieldmockup1": {
+    "src": "/assets/mockups/cosmic-child-print.jpg",
+    "width": 980,
+    "height": 964
+  },
+  "portalmockup1": {
+    "src": "/assets/mockups/portal-print.jpg",
+    "width": 980,
+    "height": 964
+  },
+  "dualitymockup1": {
+    "src": "/assets/mockups/duality-print.jpg",
+    "width": 980,
+    "height": 964
+  },
+  "becomingboardedlessthumbnailedit": {
+    "src": "/assets/steve/steve-hammock.jpg",
+    "width": 287,
+    "height": 359
+  },
+  "img-6717": {
+    "src": "/assets/steve/steve-with-dog.jpg",
+    "width": 1125,
+    "height": 1500
+  },
+  "20231005-172822": {
+    "src": "/assets/other/meow-wolf-hearts.jpg",
+    "width": 1500,
+    "height": 1125
+  },
+  "collection": {
+    "src": "/assets/paintings/2023-24/open-collection-wall.jpg",
+    "width": 1500,
+    "height": 1200
+  },
+  "groupshot": {
+    "src": "/assets/steve/steve-with-open-collection.jpg",
+    "width": 1349,
+    "height": 1500
+  },
+  "dualityportal": {
+    "src": "/assets/steve/steve-with-duality-and-portal.jpg",
+    "width": 1500,
+    "height": 1257
+  },
+  "doublelogo": {
+    "src": "/assets/other/logo-continuous-vibe-steve-knopf.png",
+    "width": 899,
+    "height": 280
+  },
+  "stickerpack1x1": {
+    "src": "/assets/stickers/sticker-pack.jpg",
+    "width": 1435,
+    "height": 1435
+  },
+  "portalwall": {
+    "src": "/assets/mockups/portal-living-room.jpg",
+    "width": 1125,
+    "height": 1500
+  },
+  "2024colectionhorazontaledit": {
+    "src": "/assets/paintings/2023-24/open-collection-row.jpg",
+    "width": 1500,
+    "height": 750
+  },
+  "dualitywall4x5": {
+    "src": "/assets/mockups/duality-living-room.jpg",
+    "width": 1200,
+    "height": 1500
+  },
+  "heartvission": {
+    "src": "/assets/mockups/heart-and-vision-bedroom.jpg",
+    "width": 1125,
+    "height": 1500
+  },
+  "cosmicduality1x1": {
+    "src": "/assets/mockups/cosmic-child-and-duality-living-room.jpg",
+    "width": 1500,
+    "height": 1500
+  },
+  "chris": {
+    "src": "/assets/other/review-chris.jpg",
+    "width": 863,
+    "height": 863
+  },
+  "gavin": {
+    "src": "/assets/other/review-gavin.jpg",
+    "width": 830,
+    "height": 830
+  },
+  "auntjanetreview": {
+    "src": "/assets/other/review-janet.png",
+    "width": 669,
+    "height": 609
+  },
+  "reviewm": {
+    "src": "/assets/other/review-matthew.png",
+    "width": 72,
+    "height": 72
+  },
+  "reviewa": {
+    "src": "/assets/other/review-andrew.png",
+    "width": 72,
+    "height": 72
+  },
+  "certifiedvibe": {
+    "src": "/assets/stickers/certified-vibe.jpg",
+    "width": 1500,
+    "height": 1479
+  },
+  "bio-bus": {
+    "src": "/assets/steve/steve-bus-workshop.jpg",
+    "width": 639,
+    "height": 800
+  },
+  "bio-dancing": {
+    "src": "/assets/steve/steve-dancing.jpg",
+    "width": 1280,
+    "height": 1600
+  }
+}

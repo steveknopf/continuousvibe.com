@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "behind-the-mask",
+    "title": "Behind The Mask",
+    "image": {
+      "src": "/assets/paintings/2021-22/behind-the-mask-gallery.jpg",
+      "alt": "Behind The Mask",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "traveler",
+    "title": "Traveler",
+    "image": {
+      "src": "/assets/paintings/2021-22/traveler-gallery.jpg",
+      "alt": "Traveler",
+      "width": 1500,
+      "height": 1021
+    }
+  },
+  {
+    "slug": "control-tower",
+    "title": "Control Tower",
+    "image": {
+      "src": "/assets/paintings/2021-22/control-tower-gallery.jpg",
+      "alt": "Control Tower",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "project-two-trwkt",
+    "title": "Inter-dimensional Crow",
+    "image": {
+      "src": "/assets/paintings/2021-22/project-two-trwkt-gallery.jpg",
+      "alt": "Inter-dimensional Crow",
+      "width": 1500,
+      "height": 1517
+    }
+  },
+  {
+    "slug": "mother-earth",
+    "title": "Mother Earth",
+    "image": {
+      "src": "/assets/paintings/2021-22/mother-earth-gallery.jpg",
+      "alt": "Mother Earth",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "let-there-be-death",
+    "title": "Let There Be Death",
+    "image": {
+      "src": "/assets/paintings/2021-22/let-there-be-death-gallery.jpg",
+      "alt": "Let There Be Death",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "project-two-hmr39",
+    "title": "Campfire",
+    "image": {
+      "src": "/assets/paintings/2021-22/project-two-hmr39-gallery.jpg",
+      "alt": "Campfire",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "crisper",
+    "title": "Crisper",
+    "image": {
+      "src": "/assets/paintings/2021-22/crisper-gallery.jpg",
+      "alt": "Crisper",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  {
+    "slug": "first-dimension",
+    "title": "first dimension",
+    "image": {
+      "src": "/assets/paintings/2021-22/first-dimension-gallery.jpg",
+      "alt": "first dimension",
+      "width": 1469,
+      "height": 1600
+    }
+  }
+]

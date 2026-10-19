@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Colors and fonts carried over from the Squarespace theme. */
+@theme {
+  --color-ink: #000000;
+  --color-forest: #1c201c;
+  --color-panel: #252a25;
+  --color-line: #3a413a;
+  --color-vibe: #e61212;
+  --color-vibe-bright: #ff3d3d;
+  --color-sun: #f7e346;
+  --color-cream: #f3f1ea;
+  --color-mute: #b4bab2;
+
+  --font-display: var(--font-bagel), system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-vibe-bright);
+  outline-offset: 2px;
+}
