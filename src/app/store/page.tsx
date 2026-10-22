@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ProductCard } from "@/components/ProductCard";
+import { PaintingsGrid } from "./PaintingsGrid";
 import { formatMoney, formatOptions, listedProducts, storeArtworks, type Artwork, type Product } from "@/lib/catalog";
 
 export const metadata: Metadata = { title: "Store" };
@@ -45,24 +46,31 @@ export default function StorePage() {
         ))}
       </nav>
 
-      {SECTIONS.map((s) => {
-        const items =
-          s.id === "art"
-            ? storeArtworks.map((a) => (
-                <ProductCard key={a.slug} href={`/store/${a.slug}`} image={a.images[0]} title={a.title} note={artworkNote(a)} />
-              ))
-            : listedProducts
+      {SECTIONS.map((s) => (
+        <section key={s.id} id={s.id} className="scroll-mt-24 pt-14">
+          <h2 className="mb-6 text-3xl">{s.title}</h2>
+          {s.id === "art" ? (
+            <PaintingsGrid
+              cards={storeArtworks.map((a) => ({
+                slug: a.slug,
+                title: a.title,
+                image: a.images[0],
+                note: artworkNote(a),
+                hasPrints: a.printSizes.length > 0,
+                hasOriginal: a.original?.available === true,
+              }))}
+            />
+          ) : (
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 lg:grid-cols-3">
+              {listedProducts
                 .filter((p) => p.category === s.id)
                 .map((p) => (
                   <ProductCard key={p.slug} href={`/store/${p.slug}`} image={p.images[0]} title={p.title} note={productNote(p)} />
-                ));
-        return (
-          <section key={s.id} id={s.id} className="scroll-mt-24 pt-14">
-            <h2 className="mb-6 text-3xl">{s.title}</h2>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 lg:grid-cols-3">{items}</div>
-          </section>
-        );
-      })}
+                ))}
+            </div>
+          )}
+        </section>
+      ))}
     </div>
   );
 }

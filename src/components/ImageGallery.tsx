@@ -4,9 +4,15 @@ import Image from "next/image";
 import { useState } from "react";
 import type { Img } from "@/lib/catalog";
 
-export function ImageGallery({ images }: { images: Img[] }) {
-  const [active, setActive] = useState(0);
-  const main = images[active];
+/**
+ * Main image plus thumbnails. `selectedSrc` lets the page drive which image shows
+ * (e.g. the size comparison when a print is chosen); clicking a thumbnail overrides it
+ * until `selectedSrc` changes again.
+ */
+export function ImageGallery({ images, selectedSrc }: { images: Img[]; selectedSrc?: string }) {
+  const [picked, setPicked] = useState<{ src: string; for?: string } | null>(null);
+  const activeSrc = picked && picked.for === selectedSrc ? picked.src : (selectedSrc ?? images[0].src);
+  const main = images.find((i) => i.src === activeSrc) ?? images[0];
 
   return (
     <div>
@@ -25,10 +31,10 @@ export function ImageGallery({ images }: { images: Img[] }) {
             <button
               key={img.src}
               type="button"
-              onClick={() => setActive(i)}
-              aria-label={`Show image ${i + 1}`}
-              aria-current={i === active}
-              className={`size-20 overflow-hidden border-2 ${i === active ? "border-vibe-bright" : "border-transparent opacity-70 hover:opacity-100"}`}
+              onClick={() => setPicked({ src: img.src, for: selectedSrc })}
+              aria-label={`Show image ${i + 1}: ${img.alt}`}
+              aria-current={img.src === main.src}
+              className={`size-20 overflow-hidden border-2 ${img.src === main.src ? "border-vibe-bright" : "border-transparent opacity-70 hover:opacity-100"}`}
             >
               <Image src={img.src} alt="" width={160} height={160} className="size-full object-cover" />
             </button>

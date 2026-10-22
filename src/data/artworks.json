@@ -16,6 +16,18 @@
         "width": 1064,
         "height": 1600,
         "alt": "Gate-or (daylight)"
+      },
+      {
+        "src": "/assets/mockups/gate-or-room-bl.jpg",
+        "alt": "Gate-or in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/gate-or-room-dl.jpg",
+        "alt": "Gate-or in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -23,6 +35,14 @@
       "price": 194400,
       "size": "3' x 4' 6\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/gate-or-room-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/gate-or-room-bl.jpg"
+      }
     }
   },
   {
@@ -42,6 +62,18 @@
         "width": 935,
         "height": 1600,
         "alt": "Hanged Man (daylight)"
+      },
+      {
+        "src": "/assets/mockups/hanged-man-room-bl.jpg",
+        "alt": "Hanged Man in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/hanged-man-room-dl.jpg",
+        "alt": "Hanged Man in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -49,6 +81,14 @@
       "price": 162000,
       "size": "2' 6\" x 4' 6\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/hanged-man-room-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/hanged-man-room-bl.jpg"
+      }
     }
   },
   {
@@ -62,6 +102,24 @@
         "width": 1280,
         "height": 1600,
         "alt": "King of Swords (blacklight)"
+      },
+      {
+        "src": "/assets/mockups/king-of-swords-room-bl.jpg",
+        "alt": "King of Swords in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/king-of-swords-framed-bl.jpg",
+        "alt": "King of Swords framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/king-of-swords-size-comparison-bl.jpg",
+        "alt": "King of Swords print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -72,6 +130,13 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "blacklight": {
+        "room": "/assets/mockups/king-of-swords-room-bl.jpg",
+        "framed": "/assets/mockups/king-of-swords-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/king-of-swords-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -85,6 +150,24 @@
         "width": 1279,
         "height": 1600,
         "alt": "Lotus Head (blacklight)"
+      },
+      {
+        "src": "/assets/mockups/lotus-head-room-bl.jpg",
+        "alt": "Lotus Head in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/lotus-head-framed-bl.jpg",
+        "alt": "Lotus Head framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/lotus-head-size-comparison-bl.jpg",
+        "alt": "Lotus Head print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -95,6 +178,13 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "blacklight": {
+        "room": "/assets/mockups/lotus-head-room-bl.jpg",
+        "framed": "/assets/mockups/lotus-head-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/lotus-head-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -114,6 +204,18 @@
         "width": 1600,
         "height": 1139,
         "alt": "Palm Shaman (daylight)"
+      },
+      {
+        "src": "/assets/mockups/palm-shaman-room-bl.jpg",
+        "alt": "Palm Shaman in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/palm-shaman-room-dl.jpg",
+        "alt": "Palm Shaman in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -121,6 +223,14 @@
       "price": 220000,
       "size": "4' 7\" x 3' 4\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/palm-shaman-room-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/palm-shaman-room-bl.jpg"
+      }
     }
   },
   {
@@ -140,6 +250,18 @@
         "width": 1600,
         "height": 1600,
         "alt": "Sacred Heart (daylight)"
+      },
+      {
+        "src": "/assets/mockups/sacred-heart-room-bl.jpg",
+        "alt": "Sacred Heart in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/sacred-heart-room-dl.jpg",
+        "alt": "Sacred Heart in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -147,6 +269,14 @@
       "price": 129600,
       "size": "3' x 3'",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/sacred-heart-room-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/sacred-heart-room-bl.jpg"
+      }
     }
   },
   {
@@ -166,6 +296,18 @@
         "width": 1366,
         "height": 1600,
         "alt": "The Horse and the Hermit (daylight)"
+      },
+      {
+        "src": "/assets/mockups/the-horse-and-the-hermit-room-bl.jpg",
+        "alt": "The Horse and the Hermit in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/the-horse-and-the-hermit-room-dl.jpg",
+        "alt": "The Horse and the Hermit in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -173,6 +315,14 @@
       "price": 151200,
       "size": "3' x 3' 6\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/the-horse-and-the-hermit-room-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/the-horse-and-the-hermit-room-bl.jpg"
+      }
     }
   },
   {
@@ -199,6 +349,30 @@
         "alt": "Decay",
         "width": 1569,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/decay-room-bl.jpg",
+        "alt": "Decay in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/decay-room-dl.jpg",
+        "alt": "Decay in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/decay-framed-bl.jpg",
+        "alt": "Decay framed on a wall (blacklight)",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/assets/mockups/decay-framed-dl.jpg",
+        "alt": "Decay framed on a wall (daylight)",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "printSizes": [
@@ -212,6 +386,16 @@
       "price": 22200,
       "size": "15\" x 15\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/decay-room-dl.jpg",
+        "framed": "/assets/mockups/decay-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/decay-room-bl.jpg",
+        "framed": "/assets/mockups/decay-framed-bl.jpg"
+      }
     }
   },
   {
@@ -238,6 +422,30 @@
         "alt": "Trinity",
         "width": 1581,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/trinity-room-bl.jpg",
+        "alt": "Trinity in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/trinity-room-dl.jpg",
+        "alt": "Trinity in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/trinity-framed-bl.jpg",
+        "alt": "Trinity framed on a wall (blacklight)",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/assets/mockups/trinity-framed-dl.jpg",
+        "alt": "Trinity framed on a wall (daylight)",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "printSizes": [
@@ -251,6 +459,16 @@
       "price": 22200,
       "size": "15\" x 15\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/trinity-room-dl.jpg",
+        "framed": "/assets/mockups/trinity-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/trinity-room-bl.jpg",
+        "framed": "/assets/mockups/trinity-framed-bl.jpg"
+      }
     }
   },
   {
@@ -277,6 +495,30 @@
         "alt": "Jar",
         "width": 1582,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/jar-room-bl.jpg",
+        "alt": "Jar in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/jar-room-dl.jpg",
+        "alt": "Jar in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/jar-framed-bl.jpg",
+        "alt": "Jar framed on a wall (blacklight)",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/assets/mockups/jar-framed-dl.jpg",
+        "alt": "Jar framed on a wall (daylight)",
+        "width": 1024,
+        "height": 1024
       }
     ],
     "printSizes": [
@@ -290,6 +532,16 @@
       "price": 22200,
       "size": "15\" x 15\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/jar-room-dl.jpg",
+        "framed": "/assets/mockups/jar-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/jar-room-bl.jpg",
+        "framed": "/assets/mockups/jar-framed-bl.jpg"
+      }
     }
   },
   {
@@ -311,6 +563,30 @@
         "alt": "Vase",
         "width": 1200,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/vase-room-bl.jpg",
+        "alt": "Vase in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vase-room-dl.jpg",
+        "alt": "Vase in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vase-size-comparison-bl.jpg",
+        "alt": "Vase print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/vase-size-comparison-dl.jpg",
+        "alt": "Vase print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -325,6 +601,16 @@
       "price": 86400,
       "size": "2' x 3'",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/vase-room-dl.jpg",
+        "sizeComparison": "/assets/mockups/vase-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/vase-room-bl.jpg",
+        "sizeComparison": "/assets/mockups/vase-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -345,6 +631,18 @@
         "alt": "Threshold Guardian",
         "width": 1279,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/threshold-guardian-room-bl.jpg",
+        "alt": "Threshold Guardian in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/threshold-guardian-size-comparison-bl.jpg",
+        "alt": "Threshold Guardian print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -355,6 +653,12 @@
       "price": 111100,
       "size": "2' x 2'6\"",
       "available": true
+    },
+    "mockups": {
+      "blacklight": {
+        "room": "/assets/mockups/threshold-guardian-room-bl.jpg",
+        "sizeComparison": "/assets/mockups/threshold-guardian-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -381,6 +685,30 @@
         "width": 1292,
         "height": 1600,
         "alt": "Summers on Shavano (daylight)"
+      },
+      {
+        "src": "/assets/mockups/summers-on-shavano-room-bl.jpg",
+        "alt": "Summers on Shavano in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/summers-on-shavano-room-dl.jpg",
+        "alt": "Summers on Shavano in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/summers-on-shavano-size-comparison-bl.jpg",
+        "alt": "Summers on Shavano print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/summers-on-shavano-size-comparison-dl.jpg",
+        "alt": "Summers on Shavano print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -391,6 +719,16 @@
       "price": 187200,
       "size": "3' 3\" x 4'",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/summers-on-shavano-room-dl.jpg",
+        "sizeComparison": "/assets/mockups/summers-on-shavano-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/summers-on-shavano-room-bl.jpg",
+        "sizeComparison": "/assets/mockups/summers-on-shavano-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -402,15 +740,15 @@
     "bullets": [],
     "images": [
       {
-        "src": "/assets/paintings/2023-24/heart-1.jpg",
-        "alt": "Heart",
-        "width": 1278,
-        "height": 1600
-      },
-      {
         "src": "/assets/paintings/2023-24/heart-2.jpg",
         "alt": "Heart",
         "width": 1280,
+        "height": 1600
+      },
+      {
+        "src": "/assets/paintings/2023-24/heart-1.jpg",
+        "alt": "Heart",
+        "width": 1278,
         "height": 1600
       },
       {
@@ -420,16 +758,40 @@
         "height": 1600
       },
       {
-        "src": "/assets/mockups/heart-3.jpg",
-        "alt": "Heart",
-        "width": 1600,
-        "height": 1600
+        "src": "/assets/mockups/heart-room-bl.jpg",
+        "alt": "Heart in a room (blacklight)",
+        "width": 1200,
+        "height": 896
       },
       {
-        "src": "/assets/mockups/heart-4.jpg",
-        "alt": "Heart",
-        "width": 1600,
-        "height": 1600
+        "src": "/assets/mockups/heart-room-dl.jpg",
+        "alt": "Heart in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/heart-framed-bl.jpg",
+        "alt": "Heart framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/heart-framed-dl.jpg",
+        "alt": "Heart framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/heart-size-comparison-bl.jpg",
+        "alt": "Heart print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/heart-size-comparison-dl.jpg",
+        "alt": "Heart print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -445,6 +807,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/heart-room-dl.jpg",
+        "framed": "/assets/mockups/heart-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/heart-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/heart-room-bl.jpg",
+        "framed": "/assets/mockups/heart-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/heart-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -456,22 +830,52 @@
     "bullets": [],
     "images": [
       {
-        "src": "/assets/paintings/2023-24/vision-1.jpg",
-        "alt": "Vision",
-        "width": 1275,
-        "height": 1600
-      },
-      {
         "src": "/assets/paintings/2023-24/vision-2.jpg",
         "alt": "Vision",
         "width": 1286,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/vision-3.jpg",
+        "src": "/assets/paintings/2023-24/vision-1.jpg",
         "alt": "Vision",
-        "width": 1600,
+        "width": 1275,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/vision-room-bl.jpg",
+        "alt": "Vision in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vision-room-dl.jpg",
+        "alt": "Vision in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vision-framed-bl.jpg",
+        "alt": "Vision framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/vision-framed-dl.jpg",
+        "alt": "Vision framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/vision-size-comparison-bl.jpg",
+        "alt": "Vision print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/vision-size-comparison-dl.jpg",
+        "alt": "Vision print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -487,6 +891,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/vision-room-dl.jpg",
+        "framed": "/assets/mockups/vision-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/vision-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/vision-room-bl.jpg",
+        "framed": "/assets/mockups/vision-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/vision-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -498,28 +914,52 @@
     "bullets": [],
     "images": [
       {
-        "src": "/assets/paintings/2023-24/cosmic-child-1.jpg",
-        "alt": "Cosmic Child",
-        "width": 1271,
-        "height": 1600
-      },
-      {
         "src": "/assets/paintings/2023-24/cosmic-child-2.jpg",
         "alt": "Cosmic Child",
         "width": 1280,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/cosmic-child-3.jpg",
+        "src": "/assets/paintings/2023-24/cosmic-child-1.jpg",
         "alt": "Cosmic Child",
-        "width": 1600,
+        "width": 1271,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/cosmic-child-4.jpg",
-        "alt": "Cosmic Child",
-        "width": 1600,
-        "height": 1600
+        "src": "/assets/mockups/cosmic-child-room-bl.jpg",
+        "alt": "Cosmic Child in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-room-dl.jpg",
+        "alt": "Cosmic Child in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-framed-bl.jpg",
+        "alt": "Cosmic Child framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-framed-dl.jpg",
+        "alt": "Cosmic Child framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-size-comparison-bl.jpg",
+        "alt": "Cosmic Child print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/cosmic-child-size-comparison-dl.jpg",
+        "alt": "Cosmic Child print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -535,6 +975,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/cosmic-child-room-dl.jpg",
+        "framed": "/assets/mockups/cosmic-child-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/cosmic-child-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/cosmic-child-room-bl.jpg",
+        "framed": "/assets/mockups/cosmic-child-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/cosmic-child-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -546,22 +998,52 @@
     "bullets": [],
     "images": [
       {
-        "src": "/assets/paintings/2023-24/portal-1.jpg",
-        "alt": "Portal",
-        "width": 1276,
-        "height": 1600
-      },
-      {
         "src": "/assets/paintings/2023-24/portal-2.jpg",
         "alt": "Portal",
         "width": 1280,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/portal-3.jpg",
+        "src": "/assets/paintings/2023-24/portal-1.jpg",
         "alt": "Portal",
-        "width": 1280,
+        "width": 1276,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/portal-room-bl.jpg",
+        "alt": "Portal in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/portal-room-dl.jpg",
+        "alt": "Portal in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/portal-framed-bl.jpg",
+        "alt": "Portal framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/portal-framed-dl.jpg",
+        "alt": "Portal framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/portal-size-comparison-bl.jpg",
+        "alt": "Portal print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/portal-size-comparison-dl.jpg",
+        "alt": "Portal print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -577,6 +1059,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/portal-room-dl.jpg",
+        "framed": "/assets/mockups/portal-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/portal-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/portal-room-bl.jpg",
+        "framed": "/assets/mockups/portal-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/portal-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -588,34 +1082,52 @@
     "bullets": [],
     "images": [
       {
-        "src": "/assets/paintings/2023-24/duality-1.jpg",
-        "alt": "Duality",
-        "width": 1266,
-        "height": 1600
-      },
-      {
         "src": "/assets/paintings/2023-24/duality-2.jpg",
         "alt": "Duality",
         "width": 1292,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/duality-3.jpg",
+        "src": "/assets/paintings/2023-24/duality-1.jpg",
         "alt": "Duality",
-        "width": 1600,
+        "width": 1266,
         "height": 1600
       },
       {
-        "src": "/assets/mockups/duality-4.jpg",
-        "alt": "Duality",
-        "width": 1000,
-        "height": 1000
+        "src": "/assets/mockups/duality-room-bl.jpg",
+        "alt": "Duality in a room (blacklight)",
+        "width": 1200,
+        "height": 896
       },
       {
-        "src": "/assets/mockups/duality-5.jpg",
-        "alt": "Duality",
-        "width": 1600,
-        "height": 1600
+        "src": "/assets/mockups/duality-room-dl.jpg",
+        "alt": "Duality in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/duality-framed-bl.jpg",
+        "alt": "Duality framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/duality-framed-dl.jpg",
+        "alt": "Duality framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/duality-size-comparison-bl.jpg",
+        "alt": "Duality print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/duality-size-comparison-dl.jpg",
+        "alt": "Duality print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -631,6 +1143,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/duality-room-dl.jpg",
+        "framed": "/assets/mockups/duality-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/duality-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/duality-room-bl.jpg",
+        "framed": "/assets/mockups/duality-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/duality-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -652,6 +1176,42 @@
         "alt": "Gamma Ray",
         "width": 1200,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-room-bl.jpg",
+        "alt": "Gamma Ray in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-room-dl.jpg",
+        "alt": "Gamma Ray in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-framed-bl.jpg",
+        "alt": "Gamma Ray framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-framed-dl.jpg",
+        "alt": "Gamma Ray framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-size-comparison-bl.jpg",
+        "alt": "Gamma Ray print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/gamma-ray-size-comparison-dl.jpg",
+        "alt": "Gamma Ray print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -666,6 +1226,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/gamma-ray-room-dl.jpg",
+        "framed": "/assets/mockups/gamma-ray-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/gamma-ray-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/gamma-ray-room-bl.jpg",
+        "framed": "/assets/mockups/gamma-ray-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/gamma-ray-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -687,6 +1259,42 @@
         "alt": "Double Vision",
         "width": 1200,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/double-vision-room-bl.jpg",
+        "alt": "Double Vision in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/double-vision-room-dl.jpg",
+        "alt": "Double Vision in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/double-vision-framed-bl.jpg",
+        "alt": "Double Vision framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/double-vision-framed-dl.jpg",
+        "alt": "Double Vision framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/double-vision-size-comparison-bl.jpg",
+        "alt": "Double Vision print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/double-vision-size-comparison-dl.jpg",
+        "alt": "Double Vision print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -701,6 +1309,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/double-vision-room-dl.jpg",
+        "framed": "/assets/mockups/double-vision-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/double-vision-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/double-vision-room-bl.jpg",
+        "framed": "/assets/mockups/double-vision-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/double-vision-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -712,16 +1332,52 @@
     "bullets": [],
     "images": [
       {
+        "src": "/assets/paintings/2021-22/pregnant-with-death-2.jpg",
+        "alt": "Pregnant with Death",
+        "width": 1066,
+        "height": 1600
+      },
+      {
         "src": "/assets/paintings/2021-22/pregnant-with-death-1.jpg",
         "alt": "Pregnant with Death",
         "width": 1066,
         "height": 1600
       },
       {
-        "src": "/assets/paintings/2021-22/pregnant-with-death-2.jpg",
-        "alt": "Pregnant with Death",
-        "width": 1066,
-        "height": 1600
+        "src": "/assets/mockups/pregnant-with-death-room-bl.jpg",
+        "alt": "Pregnant with Death in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/pregnant-with-death-room-dl.jpg",
+        "alt": "Pregnant with Death in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/pregnant-with-death-framed-bl.jpg",
+        "alt": "Pregnant with Death framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/pregnant-with-death-framed-dl.jpg",
+        "alt": "Pregnant with Death framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/pregnant-with-death-size-comparison-bl.jpg",
+        "alt": "Pregnant with Death print size comparison (blacklight)",
+        "width": 980,
+        "height": 964
+      },
+      {
+        "src": "/assets/mockups/pregnant-with-death-size-comparison-dl.jpg",
+        "alt": "Pregnant with Death print size comparison (daylight)",
+        "width": 980,
+        "height": 964
       }
     ],
     "printSizes": [
@@ -736,6 +1392,18 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/pregnant-with-death-room-dl.jpg",
+        "framed": "/assets/mockups/pregnant-with-death-framed-dl.jpg",
+        "sizeComparison": "/assets/mockups/pregnant-with-death-size-comparison-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/pregnant-with-death-room-bl.jpg",
+        "framed": "/assets/mockups/pregnant-with-death-framed-bl.jpg",
+        "sizeComparison": "/assets/mockups/pregnant-with-death-size-comparison-bl.jpg"
+      }
     }
   },
   {
@@ -749,6 +1417,18 @@
         "alt": "Moon",
         "width": 1271,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/moon-room-dl.jpg",
+        "alt": "Moon in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/moon-framed-dl.jpg",
+        "alt": "Moon framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -756,6 +1436,12 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/moon-room-dl.jpg",
+        "framed": "/assets/mockups/moon-framed-dl.jpg"
+      }
     }
   },
   {
@@ -775,6 +1461,30 @@
         "alt": "Birdhouse",
         "width": 1274,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/birdhouse-room-bl.jpg",
+        "alt": "Birdhouse in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/birdhouse-room-dl.jpg",
+        "alt": "Birdhouse in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/birdhouse-framed-bl.jpg",
+        "alt": "Birdhouse framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/birdhouse-framed-dl.jpg",
+        "alt": "Birdhouse framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -782,6 +1492,16 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/birdhouse-room-dl.jpg",
+        "framed": "/assets/mockups/birdhouse-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/birdhouse-room-bl.jpg",
+        "framed": "/assets/mockups/birdhouse-framed-bl.jpg"
+      }
     }
   },
   {
@@ -801,6 +1521,30 @@
         "alt": "Vulva",
         "width": 1279,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/vulva-room-bl.jpg",
+        "alt": "Vulva in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vulva-room-dl.jpg",
+        "alt": "Vulva in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/vulva-framed-bl.jpg",
+        "alt": "Vulva framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/vulva-framed-dl.jpg",
+        "alt": "Vulva framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -808,6 +1552,16 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/vulva-room-dl.jpg",
+        "framed": "/assets/mockups/vulva-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/vulva-room-bl.jpg",
+        "framed": "/assets/mockups/vulva-framed-bl.jpg"
+      }
     }
   },
   {
@@ -827,6 +1581,30 @@
         "alt": "Face",
         "width": 1313,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/face-room-bl.jpg",
+        "alt": "Face in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/face-room-dl.jpg",
+        "alt": "Face in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/face-framed-bl.jpg",
+        "alt": "Face framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/face-framed-dl.jpg",
+        "alt": "Face framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -834,6 +1612,16 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/face-room-dl.jpg",
+        "framed": "/assets/mockups/face-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/face-room-bl.jpg",
+        "framed": "/assets/mockups/face-framed-bl.jpg"
+      }
     }
   },
   {
@@ -853,6 +1641,30 @@
         "alt": "Traffic",
         "width": 1335,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/traffic-room-bl.jpg",
+        "alt": "Traffic in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/traffic-room-dl.jpg",
+        "alt": "Traffic in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/traffic-framed-bl.jpg",
+        "alt": "Traffic framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/traffic-framed-dl.jpg",
+        "alt": "Traffic framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -860,6 +1672,16 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/traffic-room-dl.jpg",
+        "framed": "/assets/mockups/traffic-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/traffic-room-bl.jpg",
+        "framed": "/assets/mockups/traffic-framed-bl.jpg"
+      }
     }
   },
   {
@@ -879,6 +1701,30 @@
         "alt": "Kafree",
         "width": 1286,
         "height": 1600
+      },
+      {
+        "src": "/assets/mockups/kafree-room-bl.jpg",
+        "alt": "Kafree in a room (blacklight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/kafree-room-dl.jpg",
+        "alt": "Kafree in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/kafree-framed-bl.jpg",
+        "alt": "Kafree framed on a wall (blacklight)",
+        "width": 896,
+        "height": 1200
+      },
+      {
+        "src": "/assets/mockups/kafree-framed-dl.jpg",
+        "alt": "Kafree framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -886,6 +1732,16 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/kafree-room-dl.jpg",
+        "framed": "/assets/mockups/kafree-framed-dl.jpg"
+      },
+      "blacklight": {
+        "room": "/assets/mockups/kafree-room-bl.jpg",
+        "framed": "/assets/mockups/kafree-framed-bl.jpg"
+      }
     }
   },
   {
@@ -918,6 +1774,12 @@
         "alt": "Warrior Cactus",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/warrior-cactus-room-dl.jpg",
+        "alt": "Warrior Cactus in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -925,6 +1787,11 @@
       "price": 15400,
       "size": "11\" x 14\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/warrior-cactus-room-dl.jpg"
+      }
     }
   },
   {
@@ -940,6 +1807,18 @@
         "alt": "Elder Cactus",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/elder-cactus-room-dl.jpg",
+        "alt": "Elder Cactus in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/elder-cactus-framed-dl.jpg",
+        "alt": "Elder Cactus framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -947,6 +1826,12 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/elder-cactus-room-dl.jpg",
+        "framed": "/assets/mockups/elder-cactus-framed-dl.jpg"
+      }
     }
   },
   {
@@ -962,6 +1847,18 @@
         "alt": "Ouroboros",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/ouroboros-room-dl.jpg",
+        "alt": "Ouroboros in a room (daylight)",
+        "width": 1200,
+        "height": 896
+      },
+      {
+        "src": "/assets/mockups/ouroboros-framed-dl.jpg",
+        "alt": "Ouroboros framed on a wall (daylight)",
+        "width": 896,
+        "height": 1200
       }
     ],
     "printSizes": [],
@@ -969,6 +1866,12 @@
       "price": 33300,
       "size": "16\" x 20\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/ouroboros-room-dl.jpg",
+        "framed": "/assets/mockups/ouroboros-framed-dl.jpg"
+      }
     }
   },
   {
@@ -1030,6 +1933,12 @@
         "alt": "Rams Skull",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/rams-skull-room-dl.jpg",
+        "alt": "Rams Skull in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -1037,6 +1946,11 @@
       "price": 15400,
       "size": "11\" x 14\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/rams-skull-room-dl.jpg"
+      }
     }
   },
   {
@@ -1052,6 +1966,12 @@
         "alt": "Bird",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/bird-room-dl.jpg",
+        "alt": "Bird in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -1059,6 +1979,11 @@
       "price": 10000,
       "size": "12\" x 12\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/bird-room-dl.jpg"
+      }
     }
   },
   {
@@ -1074,6 +1999,12 @@
         "alt": "Warrior Program",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/warrior-program-room-dl.jpg",
+        "alt": "Warrior Program in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -1081,6 +2012,11 @@
       "price": 15400,
       "size": "11\" x 14\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/warrior-program-room-dl.jpg"
+      }
     }
   },
   {
@@ -1096,6 +2032,12 @@
         "alt": "Anxiety",
         "width": 1600,
         "height": 1067
+      },
+      {
+        "src": "/assets/mockups/anxiety-room-dl.jpg",
+        "alt": "Anxiety in a room (daylight)",
+        "width": 1200,
+        "height": 896
       }
     ],
     "printSizes": [],
@@ -1103,6 +2045,11 @@
       "price": 15400,
       "size": "11\" x 14\"",
       "available": true
+    },
+    "mockups": {
+      "daylight": {
+        "room": "/assets/mockups/anxiety-room-dl.jpg"
+      }
     }
   }
 ]

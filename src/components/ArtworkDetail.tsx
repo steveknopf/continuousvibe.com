@@ -3,9 +3,22 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { cart } from "@/lib/cart";
+import { cart, useCart } from "@/lib/cart";
 import { formatMoney, type Artwork, type FormatOption } from "@/lib/catalog";
 import { ImageGallery } from "@/components/ImageGallery";
+
+/**
+ * The picture to show for a choice: the painting photo for the original, the print size
+ * comparison for a 5x7/8x10, or the framed mockup for the 8x8. A print follows its
+ * Daylight/Blacklight version when the painting has mockups for both.
+ */
+function imageFor(artwork: Artwork, format: string, version?: string) {
+  if (format === "original" || !artwork.mockups) return artwork.images[0].src;
+  const light = version?.toLowerCase() === "blacklight" ? "blacklight" : "daylight";
+  const set = artwork.mockups[light] ?? artwork.mockups.daylight ?? artwork.mockups.blacklight;
+  const pick = format === "8x8" ? (set?.framed ?? set?.sizeComparison) : (set?.sizeComparison ?? set?.framed);
+  return pick ?? artwork.images[0].src;
+}
 
 type Props = {
   artwork: Artwork;
@@ -14,16 +27,31 @@ type Props = {
   mode: "store" | "funnel";
 };
 
-export function ArtworkDetail({ artwork, options, mode }: Props) {
+export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
+  // In the store the original comes first and is selected by default; the free print funnel keeps prints first.
+  const options =
+    mode === "store"
+      ? [...allOptions.filter((o) => o.format === "original"), ...allOptions.filter((o) => o.format !== "original")]
+      : allOptions;
   const firstAvailable = options.find((o) => o.available)?.format ?? options[0].format;
   const [format, setFormat] = useState(firstAvailable);
   const [version, setVersion] = useState(artwork.printVersions?.[0]);
   const [status, setStatus] = useState<"idle" | "busy" | "added">("idle");
+  // Quantity to add, kept separately for each print size and version.
+  const [qtys, setQtys] = useState<Record<string, number>>({});
   const router = useRouter();
+  const cartItems = useCart();
+  /** How many of this print size and version are already in the cart. */
+  const inCart = (v?: string) =>
+    cartItems.find((i) => i.key === ["artwork", artwork.slug, format, v].filter(Boolean).join(":"))?.qty ?? 0;
 
   const selected = options.find((o) => o.format === format)!;
   const isPrint = format !== "original";
   const showVersions = isPrint && artwork.printVersions && artwork.printVersions.length > 1;
+  const shownImage = imageFor(artwork, format, isPrint ? version : undefined);
+  const qtyKey = `${format}:${isPrint ? (version ?? "") : ""}`;
+  const qty = qtys[qtyKey] ?? 1;
+  const setQty = (n: number) => setQtys((q) => ({ ...q, [qtyKey]: n }));
 
   function checkout() {
     setStatus("busy");
@@ -43,13 +71,14 @@ export function ArtworkDetail({ artwork, options, mode }: Props) {
       unitPrice: selected.price,
       image: artwork.images[0].src,
       max: isPrint ? undefined : 1,
-    });
+    }, isPrint ? qty : 1);
+    setQty(1);
     setStatus("added");
   }
 
   return (
     <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-16">
-      <ImageGallery images={artwork.images} />
+      <ImageGallery images={artwork.images} selectedSrc={shownImage} />
 
       <div>
         {mode === "funnel" && <FunnelPitch options={options} />}
@@ -90,7 +119,10 @@ export function ArtworkDetail({ artwork, options, mode }: Props) {
                     <span className="bg-sun px-2 py-0.5 text-sm font-semibold text-ink">Best value</span>
                   )}
                 </span>
-                <span className="text-right">
+                {mode === "store" && o.format !== "original" && format === o.format && o.available && (
+                  <QuantityStepper value={qty} onChange={setQty} />
+                )}
+                <span className="ml-auto text-right">
                   {o.askForPrice ? (
                     <Link href="/contact" className="text-vibe-bright underline">
                       Ask for price
@@ -123,10 +155,21 @@ export function ArtworkDetail({ artwork, options, mode }: Props) {
                   key={v}
                   type="button"
                   aria-pressed={version === v}
-                  onClick={() => setVersion(v)}
-                  className={`border-2 px-4 py-2 ${version === v ? "border-vibe-bright bg-vibe/10" : "border-line hover:border-vibe"}`}
+                  onClick={() => {
+                    setVersion(v);
+                    setStatus("idle");
+                  }}
+                  className={`relative border-2 px-4 py-2 ${version === v ? "border-vibe-bright bg-vibe/10" : "border-line hover:border-vibe"}`}
                 >
                   {v}
+                  {mode === "store" && inCart(v) > 0 && (
+                    <span
+                      className="absolute -right-2.5 -top-2.5 flex min-w-6 items-center justify-center rounded-full bg-vibe px-1.5 text-sm font-semibold leading-6 text-white"
+                      aria-label={`${inCart(v)} in cart`}
+                    >
+                      {inCart(v)}
+                    </span>
+                  )}
                 </button>
               ))}
             </div>
@@ -161,7 +204,11 @@ export function ArtworkDetail({ artwork, options, mode }: Props) {
                   disabled={!selected.available}
                   className="w-full bg-vibe px-6 py-4 font-display text-xl text-white hover:bg-vibe-bright disabled:opacity-60"
                 >
-                  {selected.available ? `Add to cart · ${formatMoney(selected.price)}` : "Sold"}
+                  {!selected.available
+                    ? "Sold"
+                    : isPrint && qty > 1
+                      ? `Add ${qty} to cart · ${formatMoney(selected.price * qty)}`
+                      : `Add to cart · ${formatMoney(selected.price)}`}
                 </button>
               )}
               {status === "added" && (
@@ -206,5 +253,22 @@ function FunnelPitch({ options }: { options: FormatOption[] }) {
         )}
       </p>
     </div>
+  );
+}
+
+function QuantityStepper({ value, onChange }: { value: number; onChange: (n: number) => void }) {
+  const btn = "flex size-8 items-center justify-center text-xl leading-none hover:text-vibe-bright disabled:opacity-30";
+  return (
+    <span className="flex items-center border-2 border-line" role="group" aria-label="Quantity">
+      <button type="button" className={btn} disabled={value <= 1} onClick={(e) => (e.preventDefault(), onChange(value - 1))} aria-label="Fewer">
+        −
+      </button>
+      <span className="w-7 text-center tabular-nums" aria-live="polite">
+        {value}
+      </span>
+      <button type="button" className={btn} disabled={value >= 20} onClick={(e) => (e.preventDefault(), onChange(value + 1))} aria-label="More">
+        +
+      </button>
+    </span>
   );
 }
