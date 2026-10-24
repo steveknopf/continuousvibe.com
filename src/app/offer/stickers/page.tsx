@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Suspense } from "react";
 import { stickerUpsell } from "@/config/offers";
 import { formatMoney, products, siteImage } from "@/lib/catalog";
-import { getPaidOrder } from "@/lib/orders";
-import { CheckoutSteps, OrderNotFound, StepLoading } from "@/components/CheckoutSteps";
-import { StickerButtons } from "./StickerButtons";
+import { getOrder } from "@/lib/orders";
+import { CheckoutSteps, orderParam, OrderNotFound, StepLoading } from "@/components/CheckoutSteps";
+import { OfferButtons } from "../OfferButtons";
 
-// Checkout step 2: one-click sticker pack offer, charged to the card used at checkout.
+// Checkout step 2b: sticker pack offer. Nothing is charged until the review page.
 
 export const metadata: Metadata = { title: "Add the sticker pack", robots: { index: false } };
 
@@ -23,8 +23,7 @@ export default function StickerOfferPage({ searchParams }: PageProps<"/offer/sti
 }
 
 async function StickerOffer({ searchParams }: Pick<PageProps<"/offer/stickers">, "searchParams">) {
-  const { payment_intent } = await searchParams;
-  const order = await getPaidOrder(typeof payment_intent === "string" ? payment_intent : undefined);
+  const order = await getOrder(orderParam(await searchParams));
   if (!order) return <OrderNotFound />;
 
   const stickers = products.filter((p) => p.category === "stickers");
@@ -61,7 +60,11 @@ async function StickerOffer({ searchParams }: Pick<PageProps<"/offer/stickers">,
         </p>
       )}
       <div className="mt-10">
-        <StickerButtons paymentIntent={order.id} acceptLabel={`Add to order · ${formatMoney(price)}`} />
+        <OfferButtons
+          order={order.id}
+          offer="stickers"
+          nextPath="/review"
+          acceptLabel={`Add to order · ${formatMoney(price)}`} />
       </div>
     </div>
   );

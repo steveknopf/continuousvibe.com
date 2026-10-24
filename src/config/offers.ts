@@ -20,15 +20,36 @@ export const hiddenCategories: string[] = ["pins"];
 export const printPrices: Record<string, number> = {
   "5x7": 1800,
   "8x10": 3000,
-  "8x8": 2000,
+  "8x8": 3000,
 };
 
 export const shipping = {
   countries: ["US"] as const,
-  /** Flat rate for store (cart) orders. */
-  flatRate: 690,
-  /** Store orders at or above this subtotal ship free. */
-  freeOver: 10000,
+  /** Prints and stickers: one flat rate per order. */
+  printsFlatRate: 690,
+  /** Orders at or above this subtotal ship free. */
+  freeOver: 100000,
+  /**
+   * Originals are priced one by one from the canvas size, like a carrier quote (estimates; tune to
+   * your real carrier rates). Billable weight = the larger of the estimated real weight and the
+   * box's dimensional weight; cost = baseFee + perPound x billable weight (+ oversizeFee for big boxes).
+   */
+  originals: {
+    /** Inches of padding added around the canvas on each side of the box (total, both sides). */
+    boxPadding: 4,
+    /** Box depth in inches (canvas plus padding). */
+    boxDepth: 4,
+    /** Carrier dimensional-weight divisor (UPS/FedEx use 139). */
+    dimDivisor: 139,
+    /** Estimated canvas weight in pounds per square inch, plus the packing materials. */
+    poundsPerSqIn: 0.004,
+    packingPounds: 2,
+    baseFee: 1500,
+    perPound: 85,
+    /** Boxes whose length + girth exceeds this (inches) pay the large-package fee. */
+    oversizeLengthGirth: 130,
+    oversizeFee: 4000,
+  },
 };
 
 /** The "free print" funnel: homepage -> size selection -> checkout -> sticker upsell -> thank you. */
@@ -38,6 +59,16 @@ export const funnel = {
     "5x7": { price: 0, shipping: 690 },
     "8x10": { price: 1500, shipping: 0 },
   } as Record<string, { price: number; shipping: number }>,
+};
+
+/**
+ * One-click offer after checkout: the other lighting (Daylight/Blacklight) of a print they bought,
+ * at this price per print size. Sizes not listed get no offer.
+ */
+export const versionUpsell: Record<string, number> = {
+  "8x10": 2000,
+  "5x7": 1000,
+  "8x8": 2000,
 };
 
 /** One-click sticker pack offer shown after every checkout (store and funnel). */

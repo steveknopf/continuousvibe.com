@@ -5,11 +5,12 @@ import Link from "next/link";
 import { shipping } from "@/config/offers";
 import { cart, useCart } from "@/lib/cart";
 import { formatMoney } from "@/lib/catalog";
+import { shippingFor } from "@/lib/shipping";
 
 export function CartView() {
   const items = useCart();
   const subtotal = items.reduce((sum, i) => sum + i.unitPrice * i.qty, 0);
-  const shippingCost = subtotal >= shipping.freeOver ? 0 : shipping.flatRate;
+  const shippingCost = shippingFor(items, subtotal);
 
   if (items.length === 0) {
     return (
@@ -71,7 +72,7 @@ export function CartView() {
           <dd>{shippingCost === 0 ? "Free" : formatMoney(shippingCost)}</dd>
         </div>
         {shippingCost > 0 && (
-          <p className="text-sm text-mute">Free shipping on orders over {formatMoney(shipping.freeOver)}.</p>
+          <p className="text-sm text-mute">Free shipping on orders of {formatMoney(shipping.freeOver)} or more.</p>
         )}
         <div className="flex justify-between border-t border-line pt-2 text-xl">
           <dt>Total</dt>

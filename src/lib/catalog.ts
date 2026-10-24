@@ -18,6 +18,8 @@ export type Artwork = {
   printSizes: string[];
   /** Lighting the print was photographed in, when the buyer can choose. */
   printVersions?: string[];
+  /** The full painting photo in each lighting it was photographed in. */
+  photos?: Partial<Record<"daylight" | "blacklight", string>>;
   /** Mockup images per lighting (daylight / blacklight). */
   mockups?: Partial<Record<"daylight" | "blacklight", { room?: string; framed?: string; sizeComparison?: string }>>;
   /** price null = not priced yet: shown as "Ask for price" and can't be bought online. */

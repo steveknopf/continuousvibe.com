@@ -48,3 +48,6 @@ next-env.d.ts
 # original iPhone photos; the site uses the converted .jpg copies
 public/**/*.heic
 public/**/*.HEIC
+
+# original event photos and clips (291 MB); the site uses the web copies in public/assets/neon-party
+/design/neon party/

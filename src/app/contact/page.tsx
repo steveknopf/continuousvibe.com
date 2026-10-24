@@ -7,7 +7,9 @@ export const metadata: Metadata = { title: "Contact" };
 
 function blacklightImage(slug: string): Img {
   const art = getArtwork(slug)!;
-  return art.images.find((i) => /bl/i.test(i.src)) ?? art.images[1] ?? art.images[0];
+  // The painting's own blacklight photo (never a mockup).
+  const src = art.photos?.blacklight ?? art.photos?.daylight;
+  return art.images.find((i) => i.src === src) ?? art.images[0];
 }
 
 function Accent({ slug, className }: { slug: string; className: string }) {

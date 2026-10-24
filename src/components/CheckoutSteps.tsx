@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { site } from "@/config/offers";
 
-const STEPS = ["Checkout", "Order customisation", "Complete"];
+const STEPS = ["Checkout", "Add-ons", "Review & pay", "Complete"];
 
-/** The "Step x of 3" bar across the top of the checkout, upsell and success pages. */
-export function CheckoutSteps({ step }: { step: 1 | 2 | 3 }) {
+/** The step bar across the top of the checkout, offer, review and success pages. */
+export function CheckoutSteps({ step }: { step: 1 | 2 | 3 | 4 }) {
   return (
     <div className="bg-forest px-4 py-4">
-      <ol className="mx-auto flex max-w-2xl overflow-hidden rounded-full border border-line text-center text-xs sm:text-sm">
+      <ol className="mx-auto flex max-w-3xl overflow-hidden rounded-full border border-line text-center text-xs sm:text-sm">
         {STEPS.map((label, i) => (
           <li
             key={label}
@@ -23,13 +23,19 @@ export function CheckoutSteps({ step }: { step: 1 | 2 | 3 }) {
   );
 }
 
+/** The order id from an offer or review page URL (`?order=`, or `?setup_intent=` after a bank redirect). */
+export function orderParam(params: Record<string, string | string[] | undefined>) {
+  const v = params.order ?? params.setup_intent;
+  return typeof v === "string" ? v : undefined;
+}
+
 export function OrderNotFound() {
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center">
       <h1 className="text-4xl text-vibe">We couldn&apos;t find your order</h1>
       <p className="mt-4 text-mute">
-        If you just checked out, your payment went through and a receipt is on its way. Questions? Email{" "}
-        <a href={`mailto:${site.email}`} className="underline">{site.email}</a>.
+        Nothing has been charged. Please check out again, or email{" "}
+        <a href={`mailto:${site.email}`} className="underline">{site.email}</a> if you need a hand.
       </p>
       <Link href="/" className="mt-8 inline-block underline">Back to the homepage</Link>
     </div>

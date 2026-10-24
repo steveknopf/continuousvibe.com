@@ -106,7 +106,7 @@ export function CheckoutView() {
         {/* stripe={null} (no key yet) still renders the form, just without the card field. */}
         <Elements
           stripe={stripePromise}
-          options={{ mode: "payment", amount: quote.total, currency: "usd", setupFutureUsage: "off_session", appearance, fonts }}
+          options={{ mode: "setup", currency: "usd", appearance, fonts }}
         >
           <CheckoutForm order={order} quote={quote} />
         </Elements>
@@ -155,18 +155,19 @@ function CheckoutForm({ order, quote }: { order: OrderRequest; quote: Quote }) {
       created.current = { key, clientSecret: data.clientSecret };
     }
 
-    const { error: payError, paymentIntent } = await stripe.confirmPayment({
+    // Saves the card without charging it; the charge happens on the review page.
+    const { error: payError, setupIntent } = await stripe.confirmSetup({
       elements,
       clientSecret: created.current.clientSecret,
       confirmParams: {
-        // Only used by payment methods that leave the page; Stripe appends ?payment_intent=...
-        return_url: `${window.location.origin}/offer/stickers`,
+        // Only used by payment methods that leave the page; Stripe appends ?setup_intent=...
+        return_url: `${window.location.origin}/offer/version`,
         payment_method_data: { billing_details: { name: customer.name, email: customer.email } },
       },
       redirect: "if_required",
     });
     if (payError) return fail(payError.message);
-    router.push(`/offer/stickers?payment_intent=${paymentIntent.id}`);
+    router.push(`/offer/version?order=${setupIntent.id}`);
   }
 
   return (
@@ -248,14 +249,14 @@ function CheckoutForm({ order, quote }: { order: OrderRequest; quote: Quote }) {
           disabled={busy || !stripe}
           className="mt-4 w-full bg-vibe px-6 py-5 font-display text-2xl uppercase text-white hover:bg-vibe-bright disabled:opacity-60"
         >
-          {busy ? "Placing your order…" : `Place my order · ${money(quote.total)}`}
+          {busy ? "Saving your details…" : "Continue"}
         </button>
         {error && (
           <p className="mt-3 text-center text-red-400" role="alert">
             {error}
           </p>
         )}
-        <p className="mt-3 text-center text-sm text-mute">Payments are processed securely by Stripe.</p>
+        <p className="mt-3 text-center text-sm text-mute">You won&apos;t be charged yet. You&apos;ll review your order before paying. Cards are secured by Stripe.</p>
       </div>
     </form>
   );

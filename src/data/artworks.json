@@ -43,6 +43,10 @@
       "blacklight": {
         "room": "/assets/mockups/gate-or-room-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/gate-or-bl.jpg",
+      "daylight": "/assets/paintings/2025-26/gate-or-dl.jpg"
     }
   },
   {
@@ -89,6 +93,10 @@
       "blacklight": {
         "room": "/assets/mockups/hanged-man-room-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/hanged-man-bl.jpg",
+      "daylight": "/assets/paintings/2025-26/hanged-man-dl.jpg"
     }
   },
   {
@@ -137,6 +145,9 @@
         "framed": "/assets/mockups/king-of-swords-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/king-of-swords-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/king-of-swords-bl.jpg"
     }
   },
   {
@@ -185,6 +196,9 @@
         "framed": "/assets/mockups/lotus-head-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/lotus-head-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/lotus-head-bl.jpg"
     }
   },
   {
@@ -231,6 +245,10 @@
       "blacklight": {
         "room": "/assets/mockups/palm-shaman-room-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/palm-shaman-bl.jpg",
+      "daylight": "/assets/paintings/2025-26/palm-shaman-dl.jpg"
     }
   },
   {
@@ -277,6 +295,10 @@
       "blacklight": {
         "room": "/assets/mockups/sacred-heart-room-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/sacred-heart-bl.jpg",
+      "daylight": "/assets/paintings/2025-26/sacred-heart-dl.jpg"
     }
   },
   {
@@ -323,6 +345,10 @@
       "blacklight": {
         "room": "/assets/mockups/the-horse-and-the-hermit-room-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/the-horse-and-the-hermit-bl.jpg",
+      "daylight": "/assets/paintings/2025-26/the-horse-and-the-hermit-dl.jpg"
     }
   },
   {
@@ -396,6 +422,10 @@
         "room": "/assets/mockups/decay-room-bl.jpg",
         "framed": "/assets/mockups/decay-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/decay-1.jpg",
+      "daylight": "/assets/paintings/2025-26/decay-2.jpg"
     }
   },
   {
@@ -469,6 +499,10 @@
         "room": "/assets/mockups/trinity-room-bl.jpg",
         "framed": "/assets/mockups/trinity-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/trinity-1.jpg",
+      "daylight": "/assets/paintings/2025-26/trinity-2.jpg"
     }
   },
   {
@@ -542,6 +576,10 @@
         "room": "/assets/mockups/jar-room-bl.jpg",
         "framed": "/assets/mockups/jar-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/jar-1.jpg",
+      "daylight": "/assets/paintings/2025-26/jar-2.jpg"
     }
   },
   {
@@ -611,6 +649,10 @@
         "room": "/assets/mockups/vase-room-bl.jpg",
         "sizeComparison": "/assets/mockups/vase-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/vase-1.jpg",
+      "daylight": "/assets/paintings/2025-26/vase-2.jpg"
     }
   },
   {
@@ -659,6 +701,9 @@
         "room": "/assets/mockups/threshold-guardian-room-bl.jpg",
         "sizeComparison": "/assets/mockups/threshold-guardian-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/threshold-guardian-1.jpg"
     }
   },
   {
@@ -729,6 +774,10 @@
         "room": "/assets/mockups/summers-on-shavano-room-bl.jpg",
         "sizeComparison": "/assets/mockups/summers-on-shavano-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2025-26/summers-on-shavano-1.jpg",
+      "daylight": "/assets/paintings/2025-26/summers-on-shavano-dl.jpg"
     }
   },
   {
@@ -819,6 +868,10 @@
         "framed": "/assets/mockups/heart-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/heart-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/heart-2.jpg",
+      "daylight": "/assets/paintings/2023-24/heart-1.jpg"
     }
   },
   {
@@ -903,6 +956,10 @@
         "framed": "/assets/mockups/vision-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/vision-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/vision-2.jpg",
+      "daylight": "/assets/paintings/2023-24/vision-1.jpg"
     }
   },
   {
@@ -987,6 +1044,10 @@
         "framed": "/assets/mockups/cosmic-child-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/cosmic-child-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/cosmic-child-2.jpg",
+      "daylight": "/assets/paintings/2023-24/cosmic-child-1.jpg"
     }
   },
   {
@@ -1071,6 +1132,10 @@
         "framed": "/assets/mockups/portal-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/portal-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/portal-2.jpg",
+      "daylight": "/assets/paintings/2023-24/portal-1.jpg"
     }
   },
   {
@@ -1155,6 +1220,10 @@
         "framed": "/assets/mockups/duality-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/duality-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/duality-2.jpg",
+      "daylight": "/assets/paintings/2023-24/duality-1.jpg"
     }
   },
   {
@@ -1238,6 +1307,10 @@
         "framed": "/assets/mockups/gamma-ray-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/gamma-ray-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/gamma-ray-1.jpg",
+      "daylight": "/assets/paintings/2023-24/gamma-ray-2.jpg"
     }
   },
   {
@@ -1321,6 +1394,10 @@
         "framed": "/assets/mockups/double-vision-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/double-vision-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2023-24/double-vision-1.jpg",
+      "daylight": "/assets/paintings/2023-24/double-vision-2.jpg"
     }
   },
   {
@@ -1404,6 +1481,10 @@
         "framed": "/assets/mockups/pregnant-with-death-framed-bl.jpg",
         "sizeComparison": "/assets/mockups/pregnant-with-death-size-comparison-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/pregnant-with-death-2.jpg",
+      "daylight": "/assets/paintings/2021-22/pregnant-with-death-1.jpg"
     }
   },
   {
@@ -1442,6 +1523,9 @@
         "room": "/assets/mockups/moon-room-dl.jpg",
         "framed": "/assets/mockups/moon-framed-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/moon-1.jpg"
     }
   },
   {
@@ -1502,6 +1586,10 @@
         "room": "/assets/mockups/birdhouse-room-bl.jpg",
         "framed": "/assets/mockups/birdhouse-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/birdhouse-1.jpg",
+      "daylight": "/assets/paintings/2021-22/birdhouse-2.jpg"
     }
   },
   {
@@ -1562,6 +1650,10 @@
         "room": "/assets/mockups/vulva-room-bl.jpg",
         "framed": "/assets/mockups/vulva-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/vulva-1.jpg",
+      "daylight": "/assets/paintings/2021-22/vulva-2.jpg"
     }
   },
   {
@@ -1622,6 +1714,10 @@
         "room": "/assets/mockups/face-room-bl.jpg",
         "framed": "/assets/mockups/face-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/face-1.jpg",
+      "daylight": "/assets/paintings/2021-22/face-2.jpg"
     }
   },
   {
@@ -1682,6 +1778,10 @@
         "room": "/assets/mockups/traffic-room-bl.jpg",
         "framed": "/assets/mockups/traffic-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/traffic-1.jpg",
+      "daylight": "/assets/paintings/2021-22/traffic-2.jpg"
     }
   },
   {
@@ -1742,6 +1842,10 @@
         "room": "/assets/mockups/kafree-room-bl.jpg",
         "framed": "/assets/mockups/kafree-framed-bl.jpg"
       }
+    },
+    "photos": {
+      "blacklight": "/assets/paintings/2021-22/kafree-1.jpg",
+      "daylight": "/assets/paintings/2021-22/kafree-2.jpg"
     }
   },
   {
@@ -1759,7 +1863,10 @@
         "height": 1363
       }
     ],
-    "printSizes": []
+    "printSizes": [],
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/transformation-crow-1.jpg"
+    }
   },
   {
     "slug": "warrior-cactus",
@@ -1792,6 +1899,9 @@
       "daylight": {
         "room": "/assets/mockups/warrior-cactus-room-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/warrior-cactus-1.jpg"
     }
   },
   {
@@ -1832,6 +1942,9 @@
         "room": "/assets/mockups/elder-cactus-room-dl.jpg",
         "framed": "/assets/mockups/elder-cactus-framed-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/elder-cactus-1.jpg"
     }
   },
   {
@@ -1872,6 +1985,9 @@
         "room": "/assets/mockups/ouroboros-room-dl.jpg",
         "framed": "/assets/mockups/ouroboros-framed-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/ouroboros-1.jpg"
     }
   },
   {
@@ -1895,7 +2011,10 @@
       "size": "11\" x 14\"",
       "available": true
     },
-    "inStore": false
+    "inStore": false,
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/fiery-water-1.jpg"
+    }
   },
   {
     "slug": "covid-19-self-portrait",
@@ -1918,7 +2037,10 @@
       "size": "16\" x 20\"",
       "available": true
     },
-    "inStore": false
+    "inStore": false,
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/covid-19-self-portrait-1.jpg"
+    }
   },
   {
     "slug": "rams-skull",
@@ -1951,6 +2073,9 @@
       "daylight": {
         "room": "/assets/mockups/rams-skull-room-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/rams-skull-1.jpg"
     }
   },
   {
@@ -1984,6 +2109,9 @@
       "daylight": {
         "room": "/assets/mockups/bird-room-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/bird-1.jpg"
     }
   },
   {
@@ -2017,6 +2145,9 @@
       "daylight": {
         "room": "/assets/mockups/warrior-program-room-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/warrior-program-1.jpg"
     }
   },
   {
@@ -2050,6 +2181,9 @@
       "daylight": {
         "room": "/assets/mockups/anxiety-room-dl.jpg"
       }
+    },
+    "photos": {
+      "daylight": "/assets/paintings/2021-22/anxiety-1.jpg"
     }
   }
 ]
