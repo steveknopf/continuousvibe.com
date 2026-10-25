@@ -102,10 +102,12 @@ export function CheckoutView() {
           </p>
           <p className="text-sm uppercase tracking-widest text-mute">30-day refund guarantee</p>
         </div>
-        {/* stripe={null} (no key yet) still renders the form, just without the card field. */}
+        {/* stripe={null} (no key yet) still renders the form, just without the card field.
+            setupFutureUsage must match the SetupIntent's usage: the card is charged on the review page
+            while the customer is there, so "on_session" (Elements otherwise assumes "off_session"). */}
         <Elements
           stripe={stripePromise}
-          options={{ mode: "setup", currency: "usd", appearance, fonts }}
+          options={{ mode: "setup", currency: "usd", setupFutureUsage: "on_session", appearance, fonts }}
         >
           <CheckoutForm order={order} quote={quote} />
         </Elements>
