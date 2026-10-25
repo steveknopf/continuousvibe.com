@@ -550,5 +550,9 @@
   {
     "source": "/gallery",
     "destination": "/portfolio"
+  },
+  {
+    "source": "/free-print/:slug",
+    "destination": "/print-pair/:slug"
   }
 ]

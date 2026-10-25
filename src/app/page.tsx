@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CheckIcon } from "@/components/Icons";
-import { funnel, funnelMockups, printPrices, site } from "@/config/offers";
-import { formatMoney, openCollection, siteImage, type Img } from "@/lib/catalog";
+import { funnel, printPrices, shipping, site } from "@/config/offers";
+import { formatMoney, openCollection, pairPrice, siteImage, type Img } from "@/lib/catalog";
 
-// Funnel step 1: the free print landing page (formerly on systeme.io).
+// Funnel step 1: the landing page for the Daylight + Blacklight print pair (formerly on systeme.io).
 
-const smallPrint = funnel.sizes["5x7"];
+/** "50%" for a 0.5 Blacklight discount. */
+const OFF = `${Math.round(funnel.blacklightDiscount * 100)}%`;
+const smallPair = pairPrice("5x7");
 
 function Pic({
   img,
@@ -22,7 +24,7 @@ function Pic({
   return <Image src={img.src} alt={img.alt} width={img.width} height={img.height} sizes={sizes} className={className} style={style} />;
 }
 
-function Cta({ children = "Get Your FREE Art Print" }: { children?: React.ReactNode }) {
+function Cta({ children = "Choose Your Prints" }: { children?: React.ReactNode }) {
   return (
     <a
       href="#choose"
@@ -34,10 +36,9 @@ function Cta({ children = "Get Your FREE Art Print" }: { children?: React.ReactN
 }
 
 const PERKS = [
-  "Choose your FREE 5x7 art print from the 5 options below",
-  "Get your art print delivered right to your door",
-  "Just pay shipping",
-  "FREE bonus - Collectors club lifetime discount",
+  "Choose your favorite print from the 5 options below",
+  `Buy the Daylight print, get the Blacklight print ${OFF} off`,
+  "Get both prints delivered right to your door",
 ];
 
 const TESTIMONIALS = [
@@ -60,16 +61,16 @@ const TESTIMONIALS = [
 
 const STEPS = [
   "Scroll down to see the artwork options",
-  "Choose your favorite print below (limited to 1 per person, please)",
+  "Choose your favorite print below",
   "Pick your size and enter your address on the following page",
-  "Just pay shipping",
-  "Receive your new piece of art and have it on your wall in 14 business days or less",
+  `Get the Daylight print at the regular price and the Blacklight print ${OFF} off`,
+  "Receive your new art and have it on your wall in 14 business days or less",
 ];
 
 const FEATURES = [
   "Official and certified replications of the original acrylic paintings",
   "Printed on thick, high-quality gloss poster paper",
-  "The option to upgrade the size of your art print",
+  `Available in ${funnel.sizes.join(" and ")}`,
   "Limited-time discount only available while supplies last!",
   "100% risk-free money-back guarantee",
 ];
@@ -126,7 +127,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-8">
           <p className="text-center font-display text-sun">Limited Time Offer</p>
           <h1 className="mt-2 text-center text-4xl leading-tight text-vibe sm:text-6xl">
-            Uncover the Cosmic Connection in a Free Artwork for Your Space!
+            Uncover the Cosmic Connection in the Light of Day and the Darkest Light!
           </h1>
           <div className="mt-10 grid items-center gap-10 md:grid-cols-2">
             <Pic img={siteImage("groupshot", "Steve with the Open collection")} />
@@ -142,10 +143,10 @@ export default function HomePage() {
       </section>
 
       {/* Hello */}
-      <section className="bg-forest px-4 py-16 sm:px-8">
+      <section className="bg-forest/80 px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-6xl text-center">
           <h2 className="text-4xl">Hello! I&apos;m Steve 👋</h2>
-          <p className="mt-3 text-xl">and I want you to have a FREE print from my collection</p>
+          <p className="mt-3 text-xl">and I want you to see my art in daylight and under blacklight</p>
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
               siteImage("portalwall", "Portal print hanging on a wall"),
@@ -198,7 +199,7 @@ export default function HomePage() {
       </section>
 
       {/* Story */}
-      <section className="bg-forest px-4 py-16 sm:px-8">
+      <section className="bg-forest/80 px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl text-vibe sm:text-4xl">Have you ever had a mind opening experience?…</h2>
           <div className="mt-10 space-y-14 leading-relaxed">
@@ -236,14 +237,25 @@ export default function HomePage() {
       <section className="px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-6xl space-y-16">
           <PhotoRow img={siteImage("dualityportal", "Duality and Portal prints")} side="left">
-            <h2 className="text-3xl text-vibe">So, why give away free art prints?</h2>
+            <h2 className="text-3xl text-vibe">So, why two prints of the same painting?</h2>
+            <p className="mt-5 leading-relaxed">
+              My paintings are made to glow. In daylight you see the colors and the detail; under blacklight the neon
+              comes alive and the whole piece changes. With both prints side by side you get to live with both sides of
+              the painting.
+            </p>
             <p className="mt-5 leading-relaxed">
               I believe art is a scaffolding for the viewer to project their personal human experience onto. So as an
-              artist my goal is to create art that reflects the human experience. I believe the human experience is a
-              universal experience. I believe everyone should have a chance to explore themselves deeper through art.
+              artist my goal is to create art that reflects the human experience. I believe the human experience is one
+              of duality, and we exist in the middle of the duality. Getting two versions of the painting will bring
+              balance to your room and remind you to center yourself. I believe everyone should have a chance to explore
+              themselves deeper through art.
             </p>
           </PhotoRow>
-          <PhotoRow img={siteImage("heartvission", "Heart and Vision prints framed in a home")} side="right" maxWidth={400}>
+          <PhotoRow
+            img={siteImage("heartpairbedroom", "Heart Daylight and Blacklight prints framed in a bedroom")}
+            side="right"
+            maxWidth={400}
+          >
             <h2 className="text-3xl text-vibe">Interested? Here are the next steps…</h2>
             <ol className="mt-5 list-decimal space-y-2 pl-6">
               {STEPS.map((s) => (
@@ -260,7 +272,7 @@ export default function HomePage() {
       </section>
 
       {/* Guarantee */}
-      <section className="bg-forest px-4 py-16 sm:px-8">
+      <section className="bg-forest/80 px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="text-4xl">You&apos;ll Be Glad To Know That</h2>
           <p className="mt-3 text-xl">I also have the best guarantee you&apos;ll ever see:</p>
@@ -268,8 +280,8 @@ export default function HomePage() {
             <div className="border-2 border-vibe p-6">
               <h3 className="text-2xl text-vibe">1. You&apos;ll love it.</h3>
               <p className="mt-4 leading-relaxed">
-                I fully guarantee you’ll love what you receive or I’ll refund your shipping &amp; handling and you can
-                keep the print anyway (or gift it to a loved one).
+                I fully guarantee you’ll love what you receive or I’ll refund your order and you can keep the prints
+                anyway (or gift them to a loved one).
               </p>
               <p className="mt-4 leading-relaxed">
                 I love creating my art, so I want you to love what you receive just as much as I love creating it -
@@ -319,15 +331,19 @@ export default function HomePage() {
                 deeper.
               </p>
             </PhotoRow>
-            <PhotoRow img={siteImage("cosmicduality1x1", "Cosmic Child and Duality prints framed in a home")} side="left">
+            <PhotoRow
+              img={siteImage("dualitypairlivingroom", "Duality Daylight and Blacklight prints framed in a living room")}
+              side="left"
+            >
               <h3 className="text-2xl">All you have to do is… 👇🏼</h3>
-              <p className="mt-3">Choose your favorite 5x7 art print from one of the 5 options below.</p>
+              <p className="mt-3">
+                Choose your favorite painting from the 5 options below and get its print in both Daylight and Blacklight.
+              </p>
               <div className="mt-5">
                 <CheckList items={FEATURES} />
               </div>
-              <h3 className="mt-8 text-2xl">Plus you get access to bonuses 👇🏼</h3>
+              <h3 className="mt-8 text-2xl">Plus you get this bonus 👇🏼</h3>
               <ul className="mt-4 list-disc space-y-2 pl-6 marker:text-vibe">
-                <li><strong>FREE BONUS</strong> - access to the Continuous Vibe collectors club</li>
                 <li><strong>FREE BONUS</strong> - money back guarantee</li>
               </ul>
             </PhotoRow>
@@ -336,7 +352,7 @@ export default function HomePage() {
       </section>
 
       {/* Choose */}
-      <section id="choose" className="scroll-mt-20 bg-forest px-4 py-16 sm:px-8">
+      <section id="choose" className="scroll-mt-20 bg-forest/80 px-4 py-16 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-center text-4xl text-vibe sm:text-5xl">Choose Your Print Below</h2>
           <div className="mt-12 space-y-10">
@@ -345,21 +361,29 @@ export default function HomePage() {
               const imageRight = i % 2 === 1;
               return (
                 <article key={a.slug} className="grid items-center gap-6 sm:grid-cols-2 sm:gap-10">
-                  <Pic
-                    img={siteImage(funnelMockups[a.slug], `${a.title} print mockup`)}
-                    sizes="(min-width: 640px) 448px, 100vw"
-                    className={`aspect-square w-full object-cover ${imageRight ? "sm:order-2" : ""}`}
-                  />
+                  {a.pairMockup && (
+                    <Pic
+                      img={a.pairMockup}
+                      sizes="(min-width: 640px) 448px, 100vw"
+                      className={`w-full ${imageRight ? "sm:order-2" : ""}`}
+                    />
+                  )}
                   <div className={imageRight ? "sm:text-right" : ""}>
                     <h3 className="text-3xl text-vibe">&quot;{a.title}&quot;</h3>
                     <p className="mt-3 leading-relaxed text-mute">{a.description[0]}</p>
                     <p className="mt-5 text-xl">
-                      <s className="text-vibe">{formatMoney(printPrices["5x7"])}</s>{" "}
-                      <span className="font-display text-sun">{formatMoney(smallPrint.price)}!</span>
+                      <s className="text-vibe">{formatMoney(printPrices["5x7"] * 2)}</s>{" "}
+                      <span className="font-display text-sun">
+                        {formatMoney(smallPair.daylight + smallPair.blacklight)} for both!
+                      </span>
                     </p>
-                    <p className="text-sm text-mute">+ {formatMoney(smallPrint.shipping)} US shipping &amp; handling fee</p>
+                    <p className="text-sm text-mute">
+                      5x7 Daylight {formatMoney(smallPair.daylight)} + Blacklight {formatMoney(smallPair.blacklight)} (
+                      {OFF} off). 8x10 pair also available.
+                    </p>
+                    <p className="text-sm text-mute">+ {formatMoney(shipping.printsFlatRate)} US shipping &amp; handling</p>
                     <Link
-                      href={`/free-print/${a.slug}`}
+                      href={`/print-pair/${a.slug}`}
                       className="mt-5 inline-block bg-vibe px-6 py-3 text-center font-display text-lg text-white hover:bg-vibe-bright"
                     >
                       Order &quot;{a.title}&quot;

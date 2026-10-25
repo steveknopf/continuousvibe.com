@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { site } from "@/config/offers";
 import { useCart } from "@/lib/cart";
+import { CornerFlames } from "@/components/CornerFlames";
 import { CartIcon, FacebookIcon, InstagramIcon, YouTubeIcon } from "@/components/Icons";
 
 const NAV = [
@@ -40,45 +41,48 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-ink/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-8">
-        <Link
-          href="/"
-          className="flex items-center gap-3 font-display text-2xl text-vibe sm:text-3xl"
-          onClick={() => setOpen(false)}
-        >
-          <Image src="/assets/cv-logo-trimmed.png" alt="" width={48} height={48} preload className="size-10 sm:size-12" />
-          Continuous Vibe
-        </Link>
-
-        <nav className="hidden items-center gap-6 text-lg text-vibe md:flex">
-          {NAV.map((n) => (
-            <Link
-              key={n.href}
-              href={n.href}
-              className={`underline-offset-8 hover:text-vibe-bright ${pathname.startsWith(n.href) ? "underline" : ""}`}
-            >
-              {n.label}
-            </Link>
-          ))}
-          <SocialLinks />
-        </nav>
-
-        <div className="flex items-center gap-4 text-vibe">
-          <Link href="/cart" className="flex items-center gap-1 hover:text-vibe-bright" aria-label={`Cart, ${count} items`}>
-            <CartIcon />
-            <span className="text-lg tabular-nums">{count}</span>
-          </Link>
-          <button
-            type="button"
-            className="md:hidden"
-            aria-expanded={open}
-            aria-label="Menu"
-            onClick={() => setOpen((o) => !o)}
+      <div className="relative">
+        <CornerFlames />
+        <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-8">
+          <Link
+            href="/"
+            className="flex items-center gap-3 font-display text-2xl text-vibe sm:text-3xl"
+            onClick={() => setOpen(false)}
           >
-            <svg viewBox="0 0 24 24" className="size-7" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
-              {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
-            </svg>
-          </button>
+            <Image src="/assets/cv-logo-trimmed.png" alt="" width={48} height={48} preload className="size-10 sm:size-12" />
+            Continuous Vibe
+          </Link>
+
+          <nav className="hidden items-center gap-6 text-lg text-vibe md:flex">
+            {NAV.map((n) => (
+              <Link
+                key={n.href}
+                href={n.href}
+                className={`underline-offset-8 hover:text-vibe-bright ${pathname.startsWith(n.href) ? "underline" : ""}`}
+              >
+                {n.label}
+              </Link>
+            ))}
+            <SocialLinks />
+          </nav>
+
+          <div className="flex items-center gap-4 text-vibe">
+            <Link href="/cart" className="flex items-center gap-1 hover:text-vibe-bright" aria-label={`Cart, ${count} items`}>
+              <CartIcon />
+              <span className="text-lg tabular-nums">{count}</span>
+            </Link>
+            <button
+              type="button"
+              className="md:hidden"
+              aria-expanded={open}
+              aria-label="Menu"
+              onClick={() => setOpen((o) => !o)}
+            >
+              <svg viewBox="0 0 24 24" className="size-7" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import "server-only";
 import { funnel, stickerUpsell, versionUpsell } from "@/config/offers";
-import { formatOptions, getArtwork, getProduct, inStock, inStore, isListed, productPrice } from "@/lib/catalog";
+import { formatOptions, getArtwork, getProduct, inStock, inStore, isListed, pairPrice, productPrice } from "@/lib/catalog";
 import { shippingFor } from "@/lib/shipping";
 import { stripe } from "@/lib/stripe";
 import { US_STATES } from "@/lib/us-states";
@@ -9,10 +9,13 @@ export type CartLine =
   | { type: "artwork"; slug: string; format: string; version?: string; qty: number }
   | { type: "product"; slug: string; qty: number };
 
-/** What the customer is buying: the store cart, or a single free-print funnel item. */
+/** "50%" for a 0.5 Blacklight discount. */
+const offPercent = () => `${Math.round(funnel.blacklightDiscount * 100)}%`;
+
+/** What the customer is buying: the store cart, or one funnel choice (a print pair, or the original). */
 export type OrderRequest =
   | { kind: "cart"; items: CartLine[] }
-  | { kind: "funnel"; slug: string; format: string; version?: string };
+  | { kind: "funnel"; slug: string; format: string };
 
 /** `ref` = "slug|format|version" for artwork lines, so offers after checkout know what was bought. */
 export type QuoteLine = { name: string; unitAmount: number; qty: number; image?: string; ref?: string };
@@ -44,12 +47,22 @@ function artworkLine(slug: string, format: string, version: string | undefined, 
 /** Prices an order from the catalog. The client's prices are never trusted. */
 export function quote(order: OrderRequest): Quote {
   let lines: QuoteLine[];
-  let shippingAmount: number | undefined;
 
   if (order?.kind === "funnel") {
-    if (getArtwork(order.slug)?.collection !== "open") throw new OrderError("This print isn't part of the offer.");
-    lines = [artworkLine(order.slug, order.format, order.version, "funnel")];
-    shippingAmount = funnel.sizes[order.format]?.shipping;
+    const art = getArtwork(order.slug);
+    if (art?.collection !== "open") throw new OrderError("This print isn't part of the offer.");
+    if (order.format === "original") {
+      lines = [artworkLine(order.slug, order.format, undefined, "store")];
+    } else {
+      // The pair: the Daylight print at full price and the Blacklight print discounted.
+      if (!funnel.sizes.includes(order.format)) throw new OrderError("That size isn't part of the offer.");
+      const pair = pairPrice(order.format);
+      const blacklight = artworkLine(order.slug, order.format, "Blacklight", "store");
+      lines = [
+        { ...artworkLine(order.slug, order.format, "Daylight", "store"), unitAmount: pair.daylight, image: art.photos?.daylight },
+        { ...blacklight, name: `${blacklight.name}, ${offPercent()} off`, unitAmount: pair.blacklight, image: art.photos?.blacklight },
+      ];
+    }
   } else if (order?.kind === "cart" && Array.isArray(order.items) && order.items.length > 0) {
     lines = order.items.map((l) => {
       const qty = Math.floor(Number(l.qty));
@@ -69,7 +82,7 @@ export function quote(order: OrderRequest): Quote {
   }
 
   const subtotal = lines.reduce((sum, l) => sum + l.unitAmount * l.qty, 0);
-  shippingAmount ??= shippingFor(
+  const shippingAmount = shippingFor(
     order.kind === "cart" ? order.items : [{ type: "artwork", slug: order.slug, format: order.format, qty: 1 }],
     subtotal,
   );

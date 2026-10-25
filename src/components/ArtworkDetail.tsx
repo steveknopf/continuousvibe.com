@@ -25,7 +25,7 @@ function imageFor(artwork: Artwork, format: string, version?: string) {
 type Props = {
   artwork: Artwork;
   options: FormatOption[];
-  /** "store" adds to the cart; "funnel" is the free print size selection and goes straight to checkout. */
+  /** "store" adds to the cart; "funnel" sells the Daylight + Blacklight print pair and goes straight to checkout. */
   mode: "store" | "funnel";
 };
 
@@ -33,14 +33,14 @@ type Line = { format: string; version?: string; qty: number; option: FormatOptio
 
 export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
   const multi = mode === "store";
-  // In the store the original comes first and is selected by default; the free print funnel keeps prints first.
+  // In the store the original comes first and is selected by default; the funnel keeps the print pairs first.
   const options = multi
     ? [...allOptions.filter((o) => o.format === "original"), ...allOptions.filter((o) => o.format !== "original")]
     : allOptions;
   const versionsAll = artwork.printVersions && artwork.printVersions.length > 1 ? artwork.printVersions : [];
   const firstAvailable = options.find((o) => o.available && !o.askForPrice)?.format ?? options[0].format;
 
-  // Store: any mix of sizes and versions. Funnel: one size, one version.
+  // Store: any mix of sizes and versions. Funnel: one size (each print size is a Daylight + Blacklight pair).
   const [formats, setFormats] = useState<string[]>([firstAvailable]);
   const [versions, setVersions] = useState<string[]>(versionsAll.slice(0, 1));
   const [focus, setFocus] = useState<{ format: string; version?: string }>({ format: firstAvailable, version: versionsAll[0] });
@@ -64,7 +64,12 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
   const total = lines.reduce((sum, l) => sum + l.option.price * l.qty, 0);
   const count = lines.reduce((n, l) => n + l.qty, 0);
   const anyPrint = formats.some((f) => f !== "original");
-  const shownImage = imageFor(artwork, focus.format, focus.format === "original" ? undefined : focus.version);
+  const pairMockup = mode === "funnel" ? artwork.pairMockup : undefined;
+  const galleryImages = pairMockup ? [pairMockup, ...artwork.images] : artwork.images;
+  const shownImage =
+    pairMockup && focus.format !== "original"
+      ? pairMockup.src
+      : imageFor(artwork, focus.format, focus.format === "original" ? undefined : focus.version);
 
   function toggleFormat(f: string) {
     setStatus("idle");
@@ -86,9 +91,7 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
   function toggleVersion(v: string) {
     setStatus("idle");
     const printFormat = focus.format !== "original" ? focus.format : formats.find((f) => f !== "original");
-    if (!multi) {
-      setVersions([v]);
-    } else if (versions.includes(v)) {
+    if (versions.includes(v)) {
       // Keep at least one version selected.
       if (versions.length === 1) return;
       const rest = versions.filter((x) => x !== v);
@@ -113,7 +116,6 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
     if (!line) return;
     setStatus("busy");
     const params = new URLSearchParams({ kind: "funnel", slug: artwork.slug, format: line.format });
-    if (line.version) params.set("version", line.version);
     router.push(`/checkout?${params}`);
   }
 
@@ -141,7 +143,7 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
 
   return (
     <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-16">
-      <ImageGallery images={artwork.images} selectedSrc={shownImage} />
+      <ImageGallery images={galleryImages} selectedSrc={shownImage} />
 
       <div>
         {mode === "funnel" && <FunnelPitch options={options} />}
@@ -181,10 +183,14 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
                         onChange={() => toggleFormat(o.format)}
                         className={multi ? CHECK : "size-5 accent-vibe-bright"}
                       />
-                      <span>{o.label}</span>
-                      {mode === "funnel" && o.format === "8x10" && (
-                        <span className="bg-sun px-2 py-0.5 text-sm font-semibold text-ink">Best value</span>
-                      )}
+                      <span>
+                        {o.label}
+                        {o.pair && (
+                          <span className="block text-sm text-mute">
+                            Daylight {formatMoney(o.pair.daylight)} + Blacklight {formatMoney(o.pair.blacklight)}
+                          </span>
+                        )}
+                      </span>
                     </label>
                     {showSteppers && rowVersions.length === 1 && (
                       <QuantityStepper
@@ -208,7 +214,6 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
                               {o.shipping === 0 ? "+ FREE S&H" : `+ ${formatMoney(o.shipping)} S&H`}
                             </span>
                           ) : (
-                            multi &&
                             o.format === "original" && (
                               <span className="block text-sm text-mute">
                                 {o.price >= shipping.freeOver
@@ -240,10 +245,10 @@ export function ArtworkDetail({ artwork, options: allOptions, mode }: Props) {
           </div>
         </fieldset>
 
-        {anyPrint && versionsAll.length > 0 && (
+        {multi && anyPrint && versionsAll.length > 0 && (
           <fieldset className="mt-6">
             <legend className="mb-3 font-display text-xl">Print version</legend>
-            {multi && <p className="-mt-1 mb-3 text-sm text-mute">Pick one or both.</p>}
+            <p className="-mt-1 mb-3 text-sm text-mute">Pick one or both.</p>
             <div className="flex flex-wrap gap-3">
               {versionsAll.map((v) => (
                 <button
@@ -329,19 +334,14 @@ const CHECK =
   "bg-center bg-no-repeat disabled:cursor-not-allowed";
 
 function FunnelPitch({ options }: { options: FormatOption[] }) {
-  const big = options.find((o) => o.format === "8x10");
+  const pair = options.find((o) => o.pair)?.pair;
+  const off = pair ? Math.round((1 - pair.blacklight / pair.daylight) * 100) : 0;
   return (
     <div className="mb-8 border-2 border-sun/60 bg-sun/5 p-5">
-      <p className="font-display text-sun">Limited time offer · They look much better bigger!</p>
+      <p className="font-display text-sun">Limited time offer · Buy one, get one {off}% off</p>
       <p className="mt-3 leading-relaxed">
-        Your free print is the 5x7. To really see the detail in my work, the prints look better a little bigger.
-        {big?.compareAt && (
-          <>
-            {" "}My 8x10 prints sell for {formatMoney(big.compareAt)} on the store, but right here you can upgrade for only{" "}
-            <strong>{formatMoney(big.price)}</strong> with free shipping. Taking me up on it also supports me as an
-            independent artist. 😊
-          </>
-        )}
+        Every painting I make lives two lives: one in daylight and one under blacklight. Buy the Daylight print and
+        get the Blacklight print of the same painting {off}% off, so you can hang them side by side and see both.
       </p>
     </div>
   );

@@ -11,12 +11,43 @@ export const metadata: Metadata = {
 
 const A = "/assets/neon-party";
 
-/** Add each person's Instagram link here when you have it. */
-const CREDITS: { role: string; people: { name: string; instagram?: string }[] }[] = [
-  { role: "Music", people: [{ name: "DJ Old Nate" }, { name: "DJ Foxy Grandpa" }, { name: "DJ Sandia" }] },
-  { role: "Photos & video", people: [{ name: "Sara" }] },
+/** The name links to `instagram`; `extra` links show after it in parentheses. */
+type Credit = { name: string; instagram?: string; extra?: { label: string; href: string }[] };
+
+const CREDITS: { role: string; people: Credit[] }[] = [
+  {
+    role: "Music",
+    people: [
+      { name: "DJ Old Nate", instagram: "https://www.instagram.com/shooter_mcdabb1n/" },
+      {
+        name: "DJ Foxy Grandpa",
+        instagram: "https://www.instagram.com/foxygrandpadj/",
+        extra: [{ label: "Neon Vibe mix", href: "https://soundcloud.com/f0xy_grandpa/neon-vibe-mix" }],
+      },
+      { name: "DJ Sandia", instagram: "https://www.instagram.com/sandia.eth/" },
+    ],
+  },
+  {
+    role: "Featured artists",
+    people: [
+      { name: "Johnny Fetchko", instagram: "https://www.instagram.com/fetchkoglassandgems/" },
+      { name: "Jordan Engebreth", instagram: "https://www.instagram.com/jengdesigns/" },
+    ],
+  },
+  {
+    role: "Photos & video",
+    people: [
+      {
+        name: "Sara Esdena Studio",
+        instagram: "https://www.instagram.com/saraesdenastudio/",
+        extra: [{ label: "website", href: "https://www.saraesdenastudio.com/" }],
+      },
+    ],
+  },
   { role: "Venue", people: [{ name: "Tres Litros Beer Company, Salida" }] },
 ];
+
+const linkClass = "text-vibe-bright underline";
 
 const PHOTOS = [
   { file: "entrance", w: 1106, h: 1600, alt: "Paintings hung by the entrance at Tres Litros Beer Company" },
@@ -26,11 +57,8 @@ const PHOTOS = [
   { file: "glowing-wall", w: 1067, h: 1600, alt: "A row of paintings glowing along the windows" },
   { file: "dance-floor", w: 1152, h: 1600, alt: "The crowd in front of the DJ booth" },
   { file: "blacklight-wall", w: 1067, h: 1600, alt: "Large paintings lit by blacklight" },
-  { file: "glass-blowing", w: 1067, h: 1600, alt: "A glassblower working a flame" },
   { file: "crowd", w: 1067, h: 1600, alt: "Guests in neon outfits under the paintings" },
-  { file: "mandala-easel", w: 1067, h: 1600, alt: "A mandala painting on an easel" },
   { file: "painting-corner", w: 1067, h: 1600, alt: "Paintings glowing in the corner of the room" },
-  { file: "sketchbook", w: 1067, h: 1600, alt: "A sketchbook and paint markers" },
 ];
 
 function Photo({ file, w, h, alt, sizes }: { file: string; w: number; h: number; alt: string; sizes: string }) {
@@ -147,6 +175,11 @@ export default function NeonPartiesPage() {
         </div>
       </section>
 
+      {/* Group photo */}
+      <section className="mx-auto mt-16 max-w-4xl">
+        <Photo file="group-shot" w={2400} h={1600} alt="Group photo from the first Neon Party" sizes="(min-width: 896px) 896px, 100vw" />
+      </section>
+
       {/* Credits */}
       <section className="mx-auto mt-14 max-w-2xl border-t border-line pt-8">
         <h2 className="text-2xl">Thank you</h2>
@@ -162,11 +195,25 @@ export default function NeonPartiesPage() {
                   <span key={p.name}>
                     {i > 0 && ", "}
                     {p.instagram ? (
-                      <a href={p.instagram} target="_blank" rel="noreferrer" className="text-vibe-bright underline">
+                      <a href={p.instagram} target="_blank" rel="noreferrer" className={linkClass}>
                         {p.name}
                       </a>
                     ) : (
                       p.name
+                    )}
+                    {p.extra && (
+                      <>
+                        {" ("}
+                        {p.extra.map((x, j) => (
+                          <span key={x.href}>
+                            {j > 0 && ", "}
+                            <a href={x.href} target="_blank" rel="noreferrer" className={linkClass}>
+                              {x.label}
+                            </a>
+                          </span>
+                        ))}
+                        {")"}
+                      </>
                     )}
                   </span>
                 ))}

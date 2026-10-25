@@ -872,6 +872,12 @@
     "photos": {
       "blacklight": "/assets/paintings/2023-24/heart-2.jpg",
       "daylight": "/assets/paintings/2023-24/heart-1.jpg"
+    },
+    "pairMockup": {
+      "src": "/assets/mockups/heart-pair.jpg",
+      "alt": "Heart Daylight and Blacklight prints framed side by side",
+      "width": 1600,
+      "height": 1195
     }
   },
   {
@@ -960,6 +966,12 @@
     "photos": {
       "blacklight": "/assets/paintings/2023-24/vision-2.jpg",
       "daylight": "/assets/paintings/2023-24/vision-1.jpg"
+    },
+    "pairMockup": {
+      "src": "/assets/mockups/vision-pair.jpg",
+      "alt": "Vision Daylight and Blacklight prints framed side by side",
+      "width": 1600,
+      "height": 1195
     }
   },
   {
@@ -1048,6 +1060,12 @@
     "photos": {
       "blacklight": "/assets/paintings/2023-24/cosmic-child-2.jpg",
       "daylight": "/assets/paintings/2023-24/cosmic-child-1.jpg"
+    },
+    "pairMockup": {
+      "src": "/assets/mockups/cosmic-child-pair.jpg",
+      "alt": "Cosmic Child Daylight and Blacklight prints framed side by side",
+      "width": 1600,
+      "height": 1195
     }
   },
   {
@@ -1136,6 +1154,12 @@
     "photos": {
       "blacklight": "/assets/paintings/2023-24/portal-2.jpg",
       "daylight": "/assets/paintings/2023-24/portal-1.jpg"
+    },
+    "pairMockup": {
+      "src": "/assets/mockups/portal-pair.jpg",
+      "alt": "Portal Daylight and Blacklight prints framed side by side",
+      "width": 1600,
+      "height": 1195
     }
   },
   {
@@ -1224,6 +1248,12 @@
     "photos": {
       "blacklight": "/assets/paintings/2023-24/duality-2.jpg",
       "daylight": "/assets/paintings/2023-24/duality-1.jpg"
+    },
+    "pairMockup": {
+      "src": "/assets/mockups/duality-pair.jpg",
+      "alt": "Duality Daylight and Blacklight prints framed side by side",
+      "width": 1600,
+      "height": 1195
     }
   },
   {

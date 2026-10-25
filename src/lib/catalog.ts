@@ -2,7 +2,7 @@ import artworksData from "@/data/artworks.json";
 import productsData from "@/data/products.json";
 import portfolioOnlyData from "@/data/portfolio-only.json";
 import siteImagesData from "@/data/site-images.json";
-import { funnel, hiddenCategories, printPrices } from "@/config/offers";
+import { funnel, hiddenCategories, printPrices, shipping } from "@/config/offers";
 
 export type Img = { src: string; alt: string; width: number; height: number };
 
@@ -22,6 +22,8 @@ export type Artwork = {
   photos?: Partial<Record<"daylight" | "blacklight", string>>;
   /** Mockup images per lighting (daylight / blacklight). */
   mockups?: Partial<Record<"daylight" | "blacklight", { room?: string; framed?: string; sizeComparison?: string }>>;
+  /** Open collection: the Daylight and Blacklight prints framed side by side, for the funnel. */
+  pairMockup?: Img;
   /** price null = not priced yet: shown as "Ask for price" and can't be bought online. */
   original?: { price: number | null; size: string | null; available: boolean };
 };
@@ -130,22 +132,38 @@ export type FormatOption = {
   compareAt?: number;
   /** Funnel only: shipping charged for this choice. */
   shipping?: number;
+  /** Funnel only: the Daylight + Blacklight split behind `price`. */
+  pair?: PairPrice;
   available: boolean;
   /** No price set yet: buyers ask instead of adding it to the cart. */
   askForPrice?: boolean;
 };
 
-/** The buying options shown on an artwork page, in store or funnel pricing. */
+export type PairPrice = { daylight: number; blacklight: number };
+
+/** Funnel pricing for one print size: the Daylight print at full price, the Blacklight one discounted. */
+export function pairPrice(size: string): PairPrice {
+  const regular = printPrices[size];
+  return { daylight: regular, blacklight: Math.round(regular * (1 - funnel.blacklightDiscount)) };
+}
+
+/**
+ * The buying options shown on an artwork page. In the store, one option per print size;
+ * in the funnel, each offered size is a Daylight + Blacklight pair.
+ */
 export function formatOptions(a: Artwork, mode: "store" | "funnel"): FormatOption[] {
-  const options: FormatOption[] = a.printSizes.map((size) => {
+  const sizes = mode === "funnel" ? a.printSizes.filter((s) => funnel.sizes.includes(s)) : a.printSizes;
+  const options: FormatOption[] = sizes.map((size) => {
     const regular = printPrices[size];
-    const offer = mode === "funnel" ? funnel.sizes[size] : undefined;
+    if (mode === "store") return { format: size, label: `${size} print`, price: regular, available: true };
+    const pair = pairPrice(size);
     return {
       format: size,
-      label: `${size} print`,
-      price: offer ? offer.price : regular,
-      compareAt: offer && offer.price < regular ? regular : undefined,
-      shipping: offer?.shipping,
+      label: `${size} Daylight + Blacklight prints`,
+      price: pair.daylight + pair.blacklight,
+      compareAt: regular * 2,
+      shipping: shipping.printsFlatRate,
+      pair,
       available: true,
     };
   });

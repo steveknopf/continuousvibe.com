@@ -8,7 +8,7 @@ export default function BioPage() {
   const bus = siteImage("bio-bus", "Steve working in his converted school bus");
   const dancing = siteImage("bio-dancing", "Steve dancing at a festival");
   return (
-    <div className="bg-forest">
+    <div>
       <div className="mx-auto max-w-6xl space-y-20 px-4 py-14 sm:px-8">
         <section className="grid items-center gap-10 md:grid-cols-2">
           <Image src={bus.src} alt={bus.alt} width={bus.width} height={bus.height} sizes="(min-width: 768px) 50vw, 100vw" />

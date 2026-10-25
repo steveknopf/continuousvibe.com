@@ -46,7 +46,6 @@ export function CheckoutView() {
             kind: "funnel",
             slug: params.get("slug") ?? "",
             format: params.get("format") ?? "",
-            version: params.get("version") ?? undefined,
           }
         : {
             kind: "cart",

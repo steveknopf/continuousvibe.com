@@ -1,6 +1,6 @@
 # continuousvibe.com
 
-The Continuous Vibe website: store, portfolio, bio, contact, and the free print sales funnel, all in one
+The Continuous Vibe website: store, portfolio, bio, contact, and the print pair sales funnel, all in one
 Next.js app with Stripe payments.
 
 ## Run it locally
@@ -18,17 +18,18 @@ to try checkout without real charges.
 
 | Page | What it is |
 | --- | --- |
-| `/` | The free print funnel landing page (was on systeme.io) |
+| `/` | The funnel landing page (was on systeme.io): buy a Daylight print, get the Blacklight print discounted |
 | `/store`, `/store/[slug]` | The store. Each painting page offers 5x7 print, 8x10 print, and the original |
-| `/free-print/[slug]` | Funnel size selection: the same product page with the funnel pricing |
+| `/print-pair/[slug]` | Funnel size selection: the same product page selling the Daylight + Blacklight pair |
 | `/checkout` | Checkout form (contact, shipping address, card) for the cart, or one funnel print (`?kind=funnel&slug=...`). Saves the card, doesn't charge |
 | `/offer/version`, `/offer/stickers` | Add-on offers: the other Daylight/Blacklight version of a print, then the sticker pack. Only recorded, not charged |
 | `/review` | Review page: remove add-ons, then Submit charges the card once for the total |
 | `/thank-you` | Order success with the receipt |
 | `/portfolio`, `/bio`, `/contact`, `/cart` | Same as the old Squarespace pages (Gallery is now Portfolio, grouped by the year folders in `public/assets/paintings/`) |
 
-Checkout flow (store cart and free print funnel): checkout form (card saved, not charged) → version offer →
-sticker pack offer → review (remove add-ons) → Submit charges the card once → thank you with receipt.
+Checkout flow (store cart and funnel): checkout form (card saved, not charged) → version offer (skipped when the
+order already has both versions) → sticker pack offer → review (remove add-ons) → Submit charges the card once →
+thank you with receipt.
 Preview the pages after checkout without Stripe at `/offer/version?order=preview` (or `order=preview-8x8`).
 
 ## Changing things

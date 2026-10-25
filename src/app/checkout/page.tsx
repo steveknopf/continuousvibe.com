@@ -3,8 +3,8 @@ import { Suspense } from "react";
 import { CheckoutSteps, StepLoading } from "@/components/CheckoutSteps";
 import { CheckoutView } from "./CheckoutView";
 
-// Checkout step 1 for both the store cart (/checkout) and the free print funnel
-// (/checkout?kind=funnel&slug=...&format=...&version=...).
+// Checkout step 1 for both the store cart (/checkout) and the funnel's Daylight + Blacklight
+// print pair (/checkout?kind=funnel&slug=...&format=...).
 
 export const metadata: Metadata = { title: "Secure checkout", robots: { index: false } };
 

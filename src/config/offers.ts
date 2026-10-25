@@ -52,13 +52,16 @@ export const shipping = {
   },
 };
 
-/** The "free print" funnel: homepage -> size selection -> checkout -> sticker upsell -> thank you. */
+/**
+ * The homepage funnel: buy the Daylight print, get the same print in Blacklight at a discount.
+ * Homepage -> /print-pair/[slug] -> checkout -> sticker upsell -> review -> thank you.
+ * Prices come from printPrices; prints ship at the normal flat rate.
+ */
 export const funnel = {
-  /** Size selection prices shown on /free-print/[slug]. */
-  sizes: {
-    "5x7": { price: 0, shipping: 690 },
-    "8x10": { price: 1500, shipping: 0 },
-  } as Record<string, { price: number; shipping: number }>,
+  /** Print sizes offered as a Daylight + Blacklight pair. */
+  sizes: ["5x7", "8x10"],
+  /** Share taken off the Blacklight print's regular price (0.5 = half off). */
+  blacklightDiscount: 0.5,
 };
 
 /**
@@ -76,13 +79,4 @@ export const stickerUpsell = {
   price: 700,
   /** The offer can only be accepted this long after the order is paid. */
   windowMinutes: 120,
-};
-
-/** Product mockup shown for each Open collection piece on the homepage. */
-export const funnelMockups: Record<string, string> = {
-  heart: "heartmockup1",
-  vision: "vissionmockup1",
-  "cosmic-child": "brainchieldmockup1",
-  portal: "portalmockup1",
-  duality: "dualitymockup1",
 };
