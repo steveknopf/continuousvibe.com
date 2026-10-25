@@ -48,7 +48,7 @@ async function Review({ searchParams }: Pick<PageProps<"/review">, "searchParams
                 <td className="py-4 pr-4">
                   <span className="font-semibold">{l.name}</span>
                   {l.qty > 1 && <span className="block text-sm text-mute">Qty {l.qty}</span>}
-                  {l.added && <span className="block text-sm text-sun">Add-on</span>}
+                  {l.added && <span className="block text-sm text-sun">{l.offer === "size" ? "Size upgrade" : "Add-on"}</span>}
                 </td>
                 <td className="py-4 text-right align-top">
                   <span className="font-semibold">{formatMoney(l.unitAmount * l.qty)}</span>

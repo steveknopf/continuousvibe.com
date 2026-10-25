@@ -162,13 +162,13 @@ function CheckoutForm({ order, quote }: { order: OrderRequest; quote: Quote }) {
       clientSecret: created.current.clientSecret,
       confirmParams: {
         // Only used by payment methods that leave the page; Stripe appends ?setup_intent=...
-        return_url: `${window.location.origin}/offer/version`,
+        return_url: `${window.location.origin}/offer/size`,
         payment_method_data: { billing_details: { name: customer.name, email: customer.email } },
       },
       redirect: "if_required",
     });
     if (payError) return fail(payError.message);
-    router.push(`/offer/version?order=${setupIntent.id}`);
+    router.push(`/offer/size?order=${setupIntent.id}`);
   }
 
   return (

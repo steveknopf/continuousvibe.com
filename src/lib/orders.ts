@@ -1,5 +1,5 @@
 import "server-only";
-import { funnel, stickerUpsell, versionUpsell } from "@/config/offers";
+import { funnel, sizeUpsell, stickerUpsell, versionUpsell } from "@/config/offers";
 import { formatOptions, getArtwork, getProduct, inStock, inStore, isListed, pairPrice, productPrice } from "@/lib/catalog";
 import { shippingFor } from "@/lib/shipping";
 import { stripe } from "@/lib/stripe";
@@ -153,7 +153,7 @@ function parseLines(metadata: Record<string, string>): OrderLine[] {
     });
 }
 
-export type Offer = "version" | "stickers";
+export type Offer = "size" | "version" | "stickers";
 
 /** An order between checkout and payment: what's in it and which offers were accepted. */
 export type Order = {
@@ -164,8 +164,8 @@ export type Order = {
   shipping: { name: string; line1: string; city: string; state: string; postalCode: string } | null;
   shippingCost: number;
   lines: OrderLine[];
-  /** Which offered prints were picked (positions in `versionOfferItems`), and the sticker pack. */
-  accepted: { version: number[]; stickers: boolean };
+  /** The size upgrade, which offered prints were picked (positions in `versionOfferItems`), and the sticker pack. */
+  accepted: { size: boolean; version: number[]; stickers: boolean };
   customer?: string;
   paymentMethod?: string;
 };
@@ -174,12 +174,13 @@ export type Order = {
 
 /**
  * Sample orders for previewing the pages after checkout, only under `next dev`. Start at
- * /offer/version?order=preview (Heart 8x10, Daylight), ?order=preview-8x8 (Decay 8x8, Daylight)
- * or ?order=preview-pair (Heart 5x7 and 8x10, both Daylight). Accepted offers are kept in the id:
- * "-v01" = offered prints 0 and 1 picked, "-stickers" = sticker pack.
+ * /offer/size?order=preview (Heart 8x10, Daylight), ?order=preview-5x7 (Heart 5x7, Daylight: gets the
+ * size offer), ?order=preview-8x8 (Decay 8x8, Daylight) or ?order=preview-pair (Heart 5x7 and 8x10,
+ * both Daylight). Accepted offers are kept in the id: "-size" = size upgrade, "-v01" = offered prints
+ * 0 and 1 picked, "-stickers" = sticker pack.
  */
 export function isPreview(id: string | undefined) {
-  return process.env.NODE_ENV === "development" && /^preview(-8x8|-pair)?(-v\d+)?(-stickers)?$/.test(id ?? "");
+  return process.env.NODE_ENV === "development" && /^preview(-8x8|-pair|-5x7)?(-size)?(-v\d+)?(-stickers)?$/.test(id ?? "");
 }
 
 function previewOrder(id: string): Order {
@@ -190,7 +191,9 @@ function previewOrder(id: string): Order {
     ? [line("Decay", "decay", "8x8", 3000)]
     : id.startsWith("preview-pair")
       ? [line("Heart", "heart", "5x7", 1800), line("Heart", "heart", "8x10", 3000)]
-      : [line("Heart", "heart", "8x10", 1500)];
+      : id.startsWith("preview-5x7")
+        ? [line("Heart", "heart", "5x7", 1800)]
+        : [line("Heart", "heart", "8x10", 3000)];
   const picks = id.match(/-v(\d+)/)?.[1] ?? "";
   return {
     id,
@@ -198,16 +201,16 @@ function previewOrder(id: string): Order {
     created: 0,
     email: "you@example.com",
     shipping: { name: "Sample Customer", line1: "123 Main St", city: "Denver", state: "CO", postalCode: "80202" },
-    shippingCost: 0,
+    shippingCost: 690,
     lines,
-    accepted: { version: [...picks].map(Number), stickers: id.endsWith("-stickers") },
+    accepted: { size: id.includes("-size"), version: [...picks].map(Number), stickers: id.endsWith("-stickers") },
   };
 }
 
 /** The preview id with an offer's choice changed. */
 function previewId(id: string, accepted: Order["accepted"]) {
-  const base = id.match(/^preview(-8x8|-pair)?/)![0];
-  return `${base}${accepted.version.length ? `-v${accepted.version.join("")}` : ""}${accepted.stickers ? "-stickers" : ""}`;
+  const base = id.match(/^preview(-8x8|-pair|-5x7)?/)![0];
+  return `${base}${accepted.size ? "-size" : ""}${accepted.version.length ? `-v${accepted.version.join("")}` : ""}${accepted.stickers ? "-stickers" : ""}`;
 }
 
 /** Positions picked for the version offer, from the stored value ("yes" = all, "no" = none, "0,2" = some). */
@@ -248,7 +251,7 @@ async function loadOrder(id: string | undefined): Promise<Order | null> {
         : null,
       shippingCost: Number(si.metadata.shipping ?? 0),
       lines: parseLines(si.metadata),
-      accepted: { version: [], stickers: si.metadata.offer_stickers === "yes" },
+      accepted: { size: si.metadata.offer_size === "yes", version: [], stickers: si.metadata.offer_stickers === "yes" },
       customer: cust?.id,
       paymentMethod: typeof si.payment_method === "string" ? si.payment_method : si.payment_method?.id,
       offerVersionValue: si.metadata.offer_version,
@@ -258,16 +261,39 @@ async function loadOrder(id: string | undefined): Promise<Order | null> {
   }
 }
 
+/**
+ * The print the size offer would upgrade: only when the order's one print is a single 5x7 (see
+ * `sizeUpsell`) of a painting that also comes in 8x10. Returns its position in `order.lines`.
+ */
+export function sizeOfferItem(order: Order) {
+  const prints = order.lines.filter((l) => l.slug && l.format && l.format !== "original");
+  const l = prints.length === 1 ? prints[0] : undefined;
+  const art = l?.slug ? getArtwork(l.slug) : undefined;
+  if (!l || !art || l.qty !== 1 || l.format !== sizeUpsell.from || !art.printSizes.includes(sizeUpsell.to)) return null;
+  return {
+    index: order.lines.indexOf(l),
+    from: l,
+    to: { ...l, format: sizeUpsell.to, unitAmount: sizeUpsell.price, name: `${art.title} — ${sizeUpsell.to} print${l.version ? ` (${l.version})` : ""}` },
+  };
+}
+
+/** The order's own lines, with the 5x7 swapped for the 8x10 when they took the size upgrade. */
+function upgradedLines(order: Order): OrderLine[] {
+  const upgrade = order.accepted.size ? sizeOfferItem(order) : null;
+  return upgrade ? order.lines.map((l, i) => (i === upgrade.index ? upgrade.to : l)) : order.lines;
+}
+
 export type VersionOfferItem = { slug: string; format: string; version: string; name: string; price: number };
 
 /**
  * The other lighting of each Daylight/Blacklight print in the order that the buyer didn't
- * already get, priced from `versionUpsell`. One print of each.
+ * already get, priced from `versionUpsell`. One print of each, in the size they ended up with.
  */
 export function versionOfferItems(order: Order): VersionOfferItem[] {
-  const bought = new Set(order.lines.map((l) => `${l.slug}|${l.format}|${l.version}`));
+  const lines = upgradedLines(order);
+  const bought = new Set(lines.map((l) => `${l.slug}|${l.format}|${l.version}`));
   const items: VersionOfferItem[] = [];
-  for (const l of order.lines) {
+  for (const l of lines) {
     const price = l.format ? versionUpsell[l.format] : undefined;
     const art = l.slug ? getArtwork(l.slug) : undefined;
     if (price === undefined || !art || !l.version || !art.printVersions?.includes(l.version)) continue;
@@ -283,8 +309,8 @@ export function versionOfferItems(order: Order): VersionOfferItem[] {
 
 export const STICKER_PACK_NAME = "Continuous Vibe exclusive sticker pack";
 
-/** The lines each accepted offer adds, keyed by offer. */
-export function offerLines(order: Order): Record<Offer, (QuoteLine & { pick?: number })[]> {
+/** The lines each accepted add-on offer adds, keyed by offer. (The size upgrade changes a line instead.) */
+export function offerLines(order: Order): Record<Exclude<Offer, "size">, (QuoteLine & { pick?: number })[]> {
   return {
     version: versionOfferItems(order).map((i, pick) => ({
       pick,
@@ -303,12 +329,13 @@ export type FinalLine = QuoteLine & { added: boolean; offer?: Offer; pick?: numb
 /** Everything the buyer will pay for: the cart plus the accepted offers. */
 export function finalLines(order: Order): { lines: FinalLine[]; total: number } {
   const offers = offerLines(order);
-  const base: FinalLine[] = order.lines.map((l) => ({
+  const upgraded = order.accepted.size ? sizeOfferItem(order)?.index : undefined;
+  const base: FinalLine[] = upgradedLines(order).map((l, i) => ({
     name: l.name,
     unitAmount: l.unitAmount,
     qty: l.qty,
     ref: l.slug ? [l.slug, l.format, l.version ?? ""].join("|") : "",
-    added: false,
+    ...(i === upgraded ? { added: true, offer: "size" as const } : { added: false }),
   }));
   const extras: FinalLine[] = [
     ...offers.version.filter((l) => order.accepted.version.includes(l.pick!)).map((l) => ({ ...l, added: true, offer: "version" as const })),
@@ -332,7 +359,9 @@ export async function setOffer(id: string, offer: Offer, on: boolean, picks?: nu
       ? [...new Set(picks ?? [...Array(available).keys()])].filter((n) => Number.isInteger(n) && n >= 0 && n < available).sort()
       : [];
   if (offer === "version" && on && chosen.length === 0) throw new OrderError("Choose at least one print to add.");
+  if (offer === "size" && on && !sizeOfferItem(order)) throw new OrderError("This order can't be upgraded.");
   const accepted = {
+    size: offer === "size" ? on : order.accepted.size,
     version: offer === "version" ? chosen : order.accepted.version,
     stickers: offer === "stickers" ? on : order.accepted.stickers,
   };
@@ -366,7 +395,7 @@ export async function submitOrder(id: string, origin: string): Promise<SubmitRes
 
   const { lines, total } = finalLines(order);
   const ship = order.shipping;
-  const choice = `v${order.accepted.version.join("")}${order.accepted.stickers ? "s" : ""}`;
+  const choice = `${order.accepted.size ? "z" : ""}v${order.accepted.version.join("")}${order.accepted.stickers ? "s" : ""}`;
   const pi = await stripe().paymentIntents.create(
     {
       amount: total,

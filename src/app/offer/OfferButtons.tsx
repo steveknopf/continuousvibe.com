@@ -5,7 +5,7 @@ import { useState } from "react";
 
 type Props = {
   order: string;
-  offer: "version" | "stickers";
+  offer: "size" | "version" | "stickers";
   acceptLabel: string;
   /** The page after this offer, e.g. "/offer/stickers". */
   nextPath: string;

@@ -421,7 +421,7 @@ export default function HomePage() {
             href="#choose"
             className="block bg-vibe px-8 py-4 text-center font-display text-xl text-white hover:bg-vibe-bright sm:col-span-2"
           >
-            Get Your FREE! Art Print
+            Buy One, Get One {OFF} Off
           </a>
         </div>
       </section>

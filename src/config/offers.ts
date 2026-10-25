@@ -65,6 +65,13 @@ export const funnel = {
 };
 
 /**
+ * First offer after checkout, when the only print in the order is a single 5x7: swap it for the 8x10
+ * of the same print at this price (the 8x10 replaces the 5x7). The version offer then follows the size
+ * they end up with.
+ */
+export const sizeUpsell = { from: "5x7", to: "8x10", price: 2500 };
+
+/**
  * One-click offer after checkout: the other lighting (Daylight/Blacklight) of a print they bought,
  * at this price per print size. Sizes not listed get no offer.
  */

@@ -40,7 +40,20 @@ export type Product = {
   images: Img[];
 };
 
-export type PortfolioItem = { slug: string; title: string; image: Img; href?: string };
+export type PortfolioItem = {
+  slug: string;
+  title: string;
+  image: Img;
+  /** Every photo of the painting, main photo first. */
+  images: Img[];
+  description: string[];
+  /** For sale paintings link to the store; the rest have a page at /portfolio/[slug]. */
+  forSale: boolean;
+  href: string;
+};
+
+/** Paintings in portfolio-only.json: never for sale, so only title and photos (description optional). */
+type PortfolioOnly = { slug: string; title: string; image: Img; images?: Img[]; description?: string[] };
 
 /** "5x7" | "8x10" | "8x8" for prints, or "original". */
 export type Format = string;
@@ -62,24 +75,58 @@ export const siteImages = siteImagesData as Record<string, Omit<Img, "alt">>;
  * (public/assets/paintings/<years>/), newest first.
  */
 export function portfolioSections() {
-  const items: PortfolioItem[] = [
-    ...artworks.map((a) => ({
-      slug: a.slug,
-      title: a.title,
-      image: a.images[0],
-      href: inStore(a) ? `/store/${a.slug}` : undefined,
-    })),
-    ...(portfolioOnlyData as PortfolioItem[]),
-  ];
   const byYear = new Map<string, PortfolioItem[]>();
-  for (const item of items) {
+  for (const item of portfolioItems()) {
     const years = yearsOf(item.image);
     if (!years) throw new Error(`${item.image.src} isn't in a year folder under public/assets/paintings/`);
     byYear.set(years, [...(byYear.get(years) ?? []), item]);
   }
   return [...byYear.entries()]
     .sort(([a], [b]) => b.localeCompare(a))
-    .map(([years, items]) => ({ years, label: years.replace("-", "–"), items }));
+    .map(([years, items]) => ({ years, label: yearLabel(years), items }));
+}
+
+/** "2021-22" -> "2021–22" */
+export const yearLabel = (years: string) => years.replace("-", "–");
+
+/** Every painting in the portfolio, for sale or not. */
+export function portfolioItems(): PortfolioItem[] {
+  return [
+    ...artworks.map((a) => {
+      const forSale = inStore(a);
+      return {
+        slug: a.slug,
+        title: a.title,
+        image: a.images[0],
+        images: a.images,
+        description: a.description,
+        forSale,
+        href: forSale ? `/store/${a.slug}` : `/portfolio/${a.slug}`,
+      };
+    }),
+    ...(portfolioOnlyData as PortfolioOnly[]).map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      image: p.image,
+      images: p.images ?? [p.image],
+      description: p.description ?? [],
+      forSale: false,
+      href: `/portfolio/${p.slug}`,
+    })),
+  ];
+}
+
+/** A painting that isn't for sale, for its /portfolio/[slug] page. */
+export function getPortfolioItem(slug: string) {
+  const item = portfolioItems().find((i) => i.slug === slug);
+  return item && { ...item, years: yearsOf(item.image) };
+}
+
+/** The opening of a description, cut at a word boundary, for the quick look card. */
+export function shortDescription(description: string[], maxChars = 220) {
+  const text = description[0] ?? "";
+  if (text.length <= maxChars) return text;
+  return text.slice(0, text.lastIndexOf(" ", maxChars)).replace(/[,.;:\s]+$/, "") + "…";
 }
 
 /**

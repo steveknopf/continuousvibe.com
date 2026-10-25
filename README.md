@@ -22,15 +22,15 @@ to try checkout without real charges.
 | `/store`, `/store/[slug]` | The store. Each painting page offers 5x7 print, 8x10 print, and the original |
 | `/print-pair/[slug]` | Funnel size selection: the same product page selling the Daylight + Blacklight pair |
 | `/checkout` | Checkout form (contact, shipping address, card) for the cart, or one funnel print (`?kind=funnel&slug=...`). Saves the card, doesn't charge |
-| `/offer/version`, `/offer/stickers` | Add-on offers: the other Daylight/Blacklight version of a print, then the sticker pack. Only recorded, not charged |
+| `/offer/size`, `/offer/version`, `/offer/stickers` | Offers after checkout: 5x7 → 8x10 upgrade, the other Daylight/Blacklight version of a print, then the sticker pack. Only recorded, not charged |
 | `/review` | Review page: remove add-ons, then Submit charges the card once for the total |
 | `/thank-you` | Order success with the receipt |
 | `/portfolio`, `/bio`, `/contact`, `/cart` | Same as the old Squarespace pages (Gallery is now Portfolio, grouped by the year folders in `public/assets/paintings/`) |
 
-Checkout flow (store cart and funnel): checkout form (card saved, not charged) → version offer (skipped when the
-order already has both versions) → sticker pack offer → review (remove add-ons) → Submit charges the card once →
+Checkout flow (store cart and funnel): checkout form (card saved, not charged) → size offer (only when the order's one
+print is a single 5x7: the 8x10 instead) → version offer (skipped when the order already has both versions) → sticker pack offer → review (remove add-ons) → Submit charges the card once →
 thank you with receipt.
-Preview the pages after checkout without Stripe at `/offer/version?order=preview` (or `order=preview-8x8`).
+Preview the pages after checkout without Stripe at `/offer/size?order=preview-5x7` (or `order=preview`, `preview-8x8`, `preview-pair`).
 
 ## Changing things
 

@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: PageProps<"/store/[slug]">): 
 export default async function StoreItemPage({ params }: PageProps<"/store/[slug]">) {
   const { slug } = await params;
   const artwork = getArtwork(slug);
-  // Portfolio-only paintings aren't for sale; old links go back to the store.
-  if (artwork && !inStore(artwork)) redirect("/store");
+  // Paintings that aren't for sale have their own portfolio page; old store links go there.
+  if (artwork && !inStore(artwork)) redirect(`/portfolio/${artwork.slug}`);
   if (artwork) return <ArtworkDetail artwork={artwork} options={formatOptions(artwork, "store")} mode="store" />;
   const product = getProduct(slug);
   // Products taken out of the store send old links back to the store.

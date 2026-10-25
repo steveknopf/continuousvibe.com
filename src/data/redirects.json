@@ -453,23 +453,23 @@
   },
   {
     "source": "/gallery/behind-the-mask",
-    "destination": "/portfolio"
+    "destination": "/portfolio/behind-the-mask"
   },
   {
     "source": "/gallery/traveler",
-    "destination": "/portfolio"
+    "destination": "/portfolio/traveler"
   },
   {
     "source": "/gallery/control-tower",
-    "destination": "/portfolio"
+    "destination": "/portfolio/control-tower"
   },
   {
     "source": "/gallery/transformation-crow",
-    "destination": "/store/transformation-crow"
+    "destination": "/portfolio/transformation-crow"
   },
   {
     "source": "/gallery/project-two-trwkt",
-    "destination": "/portfolio"
+    "destination": "/portfolio/inter-dimensional-crow"
   },
   {
     "source": "/gallery/warrior-cactus",
@@ -493,7 +493,7 @@
   },
   {
     "source": "/gallery/mother-earth",
-    "destination": "/portfolio"
+    "destination": "/portfolio/mother-earth"
   },
   {
     "source": "/gallery/ouroboros",
@@ -501,7 +501,7 @@
   },
   {
     "source": "/gallery/let-there-be-death",
-    "destination": "/portfolio"
+    "destination": "/portfolio/let-there-be-death"
   },
   {
     "source": "/gallery/bird-house",
@@ -521,15 +521,15 @@
   },
   {
     "source": "/gallery/project-two-hmr39",
-    "destination": "/portfolio"
+    "destination": "/portfolio/campfire"
   },
   {
     "source": "/gallery/crisper",
-    "destination": "/portfolio"
+    "destination": "/portfolio/crisper"
   },
   {
     "source": "/gallery/first-dimension",
-    "destination": "/portfolio"
+    "destination": "/portfolio/first-dimension"
   },
   {
     "source": "/gallery/face",
@@ -537,7 +537,7 @@
   },
   {
     "source": "/gallery/covid19-self-portrait",
-    "destination": "/store/covid-19-self-portrait"
+    "destination": "/portfolio/covid-19-self-portrait"
   },
   {
     "source": "/gallery/bird",
@@ -545,7 +545,7 @@
   },
   {
     "source": "/gallery/fiery-water",
-    "destination": "/store/fiery-water"
+    "destination": "/portfolio/fiery-water"
   },
   {
     "source": "/gallery",

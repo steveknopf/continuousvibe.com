@@ -7,10 +7,18 @@ import { useState } from "react";
 const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
 /**
- * Takes an add-on back out of the order. For version prints, `keep` lists the other picked prints
- * to keep, so only this one is removed.
+ * Takes an add-on back out of the order (or undoes the size upgrade). For version prints, `keep` lists
+ * the other picked prints to keep, so only this one is removed.
  */
-export function RemoveOfferButton({ order, offer, keep }: { order: string; offer: "version" | "stickers"; keep?: number[] }) {
+export function RemoveOfferButton({
+  order,
+  offer,
+  keep,
+}: {
+  order: string;
+  offer: "size" | "version" | "stickers";
+  keep?: number[];
+}) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -36,7 +44,7 @@ export function RemoveOfferButton({ order, offer, keep }: { order: string; offer
   return (
     <>
       <button type="button" onClick={remove} disabled={busy} className="text-sm text-vibe-bright underline hover:text-cream disabled:opacity-50">
-        {busy ? "Removing…" : "Remove"}
+        {busy ? "Removing…" : offer === "size" ? "Undo upgrade" : "Remove"}
       </button>
       {error && <span className="block text-sm text-red-400">{error}</span>}
     </>
