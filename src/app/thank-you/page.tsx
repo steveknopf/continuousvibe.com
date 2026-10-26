@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { after } from "next/server";
 import { Suspense } from "react";
 import { formatMoney } from "@/lib/catalog";
 import { getReceipt } from "@/lib/orders";
+import { sendReceipt } from "@/lib/receipt-email";
 import { CheckoutSteps, OrderNotFound, StepLoading } from "@/components/CheckoutSteps";
 import { CheckIcon } from "@/components/Icons";
 import { ClearCart } from "./ClearCart";
@@ -28,6 +30,8 @@ async function ThankYou({ searchParams }: Pick<PageProps<"/thank-you">, "searchP
   const { payment_intent } = await searchParams;
   const order = await getReceipt(typeof payment_intent === "string" ? payment_intent : undefined);
   if (!order) return <OrderNotFound />;
+  // Usually already sent when the card was charged; this catches payments confirmed in the browser.
+  if (!order.receiptSent) after(() => sendReceipt(order.id));
 
   const shippingCost = order.shippingCost;
   const rows = order.lines.map((l) => ({

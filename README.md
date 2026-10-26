@@ -48,8 +48,20 @@ tagged with the original order.
 ## Going live
 
 1. Deploy to [Vercel](https://vercel.com) (import this repo; no config needed).
-2. In Vercel, set `STRIPE_SECRET_KEY` (live key), `SITE_URL=https://www.continuousvibe.com`, and optionally
-   `RESEND_API_KEY` for the contact form.
+2. In Vercel, set `STRIPE_SECRET_KEY` (live key), `SITE_URL=https://www.continuousvibe.com`, and the email
+   settings below.
 3. Point the `continuousvibe.com` domain at Vercel. Old Squarespace links redirect automatically
    (`src/data/redirects.json`).
+
+## Email
+
+Contact form messages and order receipts are sent through [Resend](https://resend.com) from the site's own
+address. Set:
+
+- `RESEND_API_KEY`: from Resend, after verifying the `continuousvibe.com` domain there.
+- `EMAIL_FROM`: the sender, e.g. `Continuous Vibe <steve@continuousvibe.com>`.
+- `CONTACT_TO_EMAIL`: where contact messages and a copy of every receipt go.
+
+The receipt goes out once per payment (`src/lib/receipt-email.ts`). Keep Stripe's own receipts off
+(Settings → Customer emails → Successful payments) so buyers don't get two.
 # continuousvibe.com

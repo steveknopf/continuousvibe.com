@@ -404,7 +404,6 @@ export async function submitOrder(id: string, origin: string): Promise<SubmitRes
       payment_method: order.paymentMethod,
       confirm: true,
       return_url: `${origin}/thank-you`,
-      receipt_email: order.email || undefined,
       shipping: ship
         ? { name: ship.name, address: { line1: ship.line1, city: ship.city, state: ship.state, postal_code: ship.postalCode, country: "US" } }
         : undefined,
@@ -412,6 +411,8 @@ export async function submitOrder(id: string, origin: string): Promise<SubmitRes
       metadata: {
         cv_order: order.kind,
         setup_intent: order.id,
+        // Kept here rather than in receipt_email, which would make Stripe send its own receipt too.
+        email: order.email,
         shipping: String(order.shippingCost),
         ...itemMetadata(lines),
       },
@@ -427,12 +428,15 @@ export async function submitOrder(id: string, origin: string): Promise<SubmitRes
 // ---------- After payment ----------
 
 export type Receipt = {
+  id: string;
   kind: string;
   email: string;
   shipping: Order["shipping"];
   shippingCost: number;
   lines: OrderLine[];
   total: number;
+  /** Whether the receipt email has gone out. */
+  receiptSent: boolean;
 };
 
 /** The paid order for a PaymentIntent id from the URL (or a preview id), or null. */
@@ -440,7 +444,7 @@ export async function getReceipt(paymentIntentId: string | undefined): Promise<R
   if (isPreview(paymentIntentId)) {
     const order = previewOrder(paymentIntentId!);
     const { lines, total } = finalLines(order);
-    return { ...order, lines: parseLines(itemMetadata(lines)), total };
+    return { ...order, id: paymentIntentId!, lines: parseLines(itemMetadata(lines)), total, receiptSent: false };
   }
   if (!paymentIntentId?.startsWith("pi_")) return null;
   try {
@@ -448,16 +452,24 @@ export async function getReceipt(paymentIntentId: string | undefined): Promise<R
     if (!["succeeded", "processing"].includes(pi.status) || !pi.metadata.cv_order) return null;
     const a = pi.shipping?.address;
     return {
+      id: pi.id,
       kind: pi.metadata.cv_order,
-      email: pi.receipt_email ?? "",
+      email: pi.metadata.email ?? pi.receipt_email ?? "",
       shipping: pi.shipping
         ? { name: pi.shipping.name ?? "", line1: a?.line1 ?? "", city: a?.city ?? "", state: a?.state ?? "", postalCode: a?.postal_code ?? "" }
         : null,
       shippingCost: Number(pi.metadata.shipping ?? 0),
       lines: parseLines(pi.metadata),
       total: pi.amount,
+      receiptSent: pi.metadata.receipt_sent === "1",
     };
   } catch {
     return null;
   }
+}
+
+/** Notes on the payment that its receipt email went out, so it's only sent once. */
+export async function markReceiptSent(paymentIntentId: string) {
+  if (isPreview(paymentIntentId)) return;
+  await stripe().paymentIntents.update(paymentIntentId, { metadata: { receipt_sent: "1" } });
 }
