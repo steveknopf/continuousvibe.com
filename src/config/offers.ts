@@ -4,7 +4,7 @@
 export const site = {
   name: "Continuous Vibe",
   artist: "Steve Knopf",
-  email: "humantypeinc@gmail.com",
+  email: "steve@continuousvibe.com",
   instagram: "https://www.instagram.com/continuousvibe/",
   youtube: "https://www.youtube.com/channel/UCsri5wVL9HWnKMkLW4KM2fA",
   facebook: "https://www.facebook.com/p/Continuous-vibe-61563599577929/",
