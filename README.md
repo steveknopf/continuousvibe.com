@@ -62,6 +62,8 @@ address. Set:
 - `EMAIL_FROM`: the sender, e.g. `Continuous Vibe <steve@continuousvibe.com>`.
 - `CONTACT_TO_EMAIL`: where contact messages and a copy of every receipt go.
 
-The receipt goes out once per payment (`src/lib/receipt-email.ts`). Keep Stripe's own receipts off
+The receipt goes out once per payment (`src/lib/receipt-email.ts`), and a follow-up asking for a review is
+scheduled in Resend for 16 days later (`src/lib/follow-up-email.ts`). Both share `src/lib/email-layout.ts`; the
+logo, wordmark and signature images are rebuilt with `design/scripts/email_images.py`. Keep Stripe's own receipts off
 (Settings → Customer emails → Successful payments) so buyers don't get two.
 # continuousvibe.com

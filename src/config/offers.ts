@@ -7,7 +7,9 @@ export const site = {
   email: "steve@continuousvibe.com",
   instagram: "https://www.instagram.com/continuousvibe/",
   youtube: "https://www.youtube.com/channel/UCsri5wVL9HWnKMkLW4KM2fA",
-  facebook: "https://www.facebook.com/p/Continuous-vibe-61563599577929/",
+  facebook: "https://www.facebook.com/profile.php?id=61563599577929",
+  /** Google review page, linked from the follow-up email. */
+  review: "https://g.page/r/CavKcRuy-EKKEAE/review",
 };
 
 /**

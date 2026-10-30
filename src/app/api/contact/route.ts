@@ -2,6 +2,15 @@ import { site } from "@/config/offers";
 import { emailConfigured, inboxAddress, sendEmail } from "@/lib/email";
 
 const FIELDS = ["firstName", "lastName", "email", "phone", "services", "startDate", "details"] as const;
+const LABELS: Record<(typeof FIELDS)[number], string> = {
+  firstName: "First name",
+  lastName: "Last name",
+  email: "Email",
+  phone: "Phone",
+  services: "Interested in",
+  startDate: "Start date",
+  details: "Message",
+};
 
 /** Emails contact form submissions to the site inbox. */
 export async function POST(request: Request) {
@@ -23,7 +32,7 @@ export async function POST(request: Request) {
       to: inboxAddress(),
       replyTo: data.email,
       subject: `New inquiry from ${data.firstName} ${data.lastName}`,
-      text: FIELDS.map((f) => `${f}: ${data[f] || "-"}`).join("\n"),
+      text: FIELDS.map((f) => `${LABELS[f]}: ${data[f] || "-"}`).join("\n"),
     });
   } catch (err) {
     console.error(err);
