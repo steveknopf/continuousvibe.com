@@ -2,7 +2,10 @@
   {
     "slug": "gate-or",
     "title": "Gate-or",
-    "description": [],
+    "description": [
+      "\"Gate-or\" is a gatekeeper with teeth. A giant alligator bursts through a crumbling brick wall, eye locked on you, grinning like it has been guarding this threshold forever. Every gate has a keeper, and you must confront this keeper to cross the threshold.",
+      "In daylight the gator is a deep jungle green against shards of silver and rainbow. Under blacklight the whole scene floods electric blue and the scales glow like they are charged."
+    ],
     "bullets": [],
     "images": [
       {
@@ -52,7 +55,10 @@
   {
     "slug": "hanged-man",
     "title": "Hanged Man",
-    "description": [],
+    "description": [
+      "\"Hanged Man\" is built around the twelfth card of the tarot, the card of surrender and seeing the world from a new angle. Two hands reach up toward an all-seeing triangle while a skull below opens like a vessel, and the number 12 repeats across the canvas like a mantra.",
+      "In daylight it is a stark black-and-white study wrapped in streaks of color. Under blacklight the hands fade into deep blue and the triangle, symbols and numbers ignite. Let go, hang upside down, and see what you have been missing."
+    ],
     "bullets": [],
     "images": [
       {
@@ -102,7 +108,10 @@
   {
     "slug": "king-of-swords",
     "title": "King of Swords",
-    "description": [],
+    "description": [
+      "\"King of Swords\" is the ruler of the mind: clear thinking, hard truths and the courage to cut through illusion. A horned skull wears the crown here, pierced by a blade, while a cactus stands guard and a field of X's and O's plays out the game of decisions overhead.",
+      "Painted in fluorescent color, this piece comes alive under blacklight with hot pink, neon green and electric orange."
+    ],
     "bullets": [],
     "images": [
       {
@@ -153,7 +162,10 @@
   {
     "slug": "lotus-head",
     "title": "Lotus Head",
-    "description": [],
+    "description": [
+      "\"Lotus Head\" shows a skull crowned by a blooming lotus, the flower that rises clean out of the mud. It is a reminder that awakening grows out of the same ground as decay, and that something beautiful can open right out of the mind.",
+      "Under blacklight the petals blaze neon orange and green above a skull that melts into deep violet shadow."
+    ],
     "bullets": [],
     "images": [
       {
@@ -204,7 +216,10 @@
   {
     "slug": "palm-shaman",
     "title": "Palm Shaman",
-    "description": [],
+    "description": [
+      "\"Palm Shaman\" brings a skull-faced medicine keeper to life between four swaying palm trees. Crowned with a fiery headdress and wrapped in green spirals of energy, the shaman stands at the center of a tropical dream, a guide between this world and the next.",
+      "In daylight the piece is warm and sun-washed. Under blacklight it turns into a glowing night ceremony, with neon spirals, palms and feathers floating on electric blue."
+    ],
     "bullets": [],
     "images": [
       {
@@ -254,7 +269,10 @@
   {
     "slug": "sacred-heart",
     "title": "Sacred Heart",
-    "description": [],
+    "description": [
+      "\"Sacred Heart\" lifts the anatomical heart into something holy. Spread on flaming wings and marked with an open, all-seeing eye, the heart radiates beams of light out of a swirling vortex, as if it is the true center of perception.",
+      "In daylight the rays shimmer silver and holographic. Under blacklight the wings flare neon pink and orange, floating in deep blue."
+    ],
     "bullets": [],
     "images": [
       {
@@ -304,7 +322,11 @@
   {
     "slug": "the-horse-and-the-hermit",
     "title": "The Horse and the Hermit",
-    "description": [],
+    "description": [
+      "I painted The Horse and the Hermit live during the show and finished it that night. The hermit is the anglerfish skull. In the tarot, the Hermit chooses to leave society, not to shun it, but to better understand himself. He holds out his lantern to guide anyone willing to make the journey to the light, and all will be illuminated. The Hermit gives back the lessons he learned in isolation.",
+      "That story has a special meaning to me. I spent years traveling in my bus, camping in the middle of nowhere, painting and going deep within myself to understand who I am. That light is what I want to give to people.",
+      "The seahorse is the year of the horse, the fire horse: an active energy, an energy of doing. It's the energy I want to bring to sharing my light with people, and this show was an example of that."
+    ],
     "bullets": [],
     "images": [
       {
@@ -358,11 +380,7 @@
       "Unveil the enchanting world of 'Decay,' where vibrant mushrooms emerge from a skull, illuminating your space with mysterious beauty.",
       "Bring an evocative piece into your space that inspires curiosity and conversation. This artwork offers a striking focal point that transforms any room."
     ],
-    "bullets": [
-      "Measures 15\"x15\", ideal for adding a unique touch to smaller spaces.",
-      "Created with high-quality acrylic paints, ensuring long-lasting vibrancy.",
-      "One-of-a-kind piece that captivates with its vivid colors and mysterious subject."
-    ],
+    "bullets": [],
     "images": [
       {
         "src": "/assets/paintings/2025-26/decay-1.jpg",
@@ -435,11 +453,7 @@
       "Immerse yourself in a world of vibrant colors and mystical allure with the original art piece 'Trinity', featuring three glowing mushrooms that captivate the imagination.",
       "Bring a sense of wonder and magic into your home with this captivating art piece. Let 'Trinity' transform your space into a conversation starter and an oasis of creativity."
     ],
-    "bullets": [
-      "15\"x15\" acrylic painting on canvas, suited for modern home decor.",
-      "Features three vibrant, glowing mushrooms on a mysterious background.",
-      "Unique, original artwork that adds a touch of mystique to any space."
-    ],
+    "bullets": [],
     "images": [
       {
         "src": "/assets/paintings/2025-26/trinity-1.jpg",
@@ -512,11 +526,7 @@
       "Engage with nature’s beauty on a microscopic scale with this captivating 8x8 fine art print, featuring neon mushroom spores that pop with vibrant colors.",
       "Illuminate your space with the charm and curiosity of the microscopic world, transforming any room into a conversation starter."
     ],
-    "bullets": [
-      "8x8 inch size perfect for compact spaces or gallery walls.",
-      "High-quality fine art print capturing the intricate details of mushroom spores.",
-      "Neon colors bring a vibrant, modern touch to your decor."
-    ],
+    "bullets": [],
     "images": [
       {
         "src": "/assets/paintings/2025-26/jar-1.jpg",
@@ -586,7 +596,8 @@
     "slug": "vase",
     "title": "Vase",
     "description": [
-      "Imagine transforming your living space into an artful sanctuary with this one-of-a-kind masterpiece, sparking conversations and inspiring creativity every day."
+      "\"Vase\" turns the female body into a vessel. Her torso becomes the vase itself atop the threshold, with fiery blossoms growing out of the open top. It is a celebration of the body as a container for life, where creation is always quietly blooming.",
+      "In daylight she glows warm orange against a storm of electric blue and hot pink strokes. Under blacklight the background drops into deep blue and the flowers and outlines light up neon."
     ],
     "bullets": [],
     "images": [
@@ -659,14 +670,10 @@
     "slug": "threshold-guardian",
     "title": "Threshold Guardian",
     "description": [
-      "Transform your space with a striking 8x10 art print that merges modern artistry with ancient symbolism in vivid neon colors.",
-      "This piece transforms any space into a modern art haven, sparking conversation and inspiration with its unique visual story."
+      "\"Threshold Guardian\" stands at the doorway between the known and the unknown. In every hero's journey there is a guardian at the edge of the next world, and here she is: a bare-shouldered figure whose head dissolves into a blaze of red, yellow and blue, as if her mind has already crossed over.",
+      "Ancient symbols surround her, from pyramids and spirals to a rising serpent and birds in flight across the top. To pass her you have to let go of who you were. Painted in fluorescent color, this piece glows hot pink, neon green and red under blacklight."
     ],
-    "bullets": [
-      "Vibrant 8x10 art print in bold, neon colors perfect for modern decor.",
-      "Features a headless woman amidst ancient hieroglyphs, combining mystery and intrigue.",
-      "High-quality print material ensures lasting color and clarity."
-    ],
+    "bullets": [],
     "images": [
       {
         "src": "/assets/paintings/2025-26/threshold-guardian-1.jpg",
@@ -710,14 +717,10 @@
     "slug": "summers-on-shavano",
     "title": "Summers on Shavano",
     "description": [
-      "Transform your space with this mesmerizing 8x10 neon art print, featuring a vibrantly colored hummingbird drinking from a flower that bursts with life and energy.",
-      "Brighten your living space and bring a touch of nature's wonder indoors with this stunning art piece, sure to captivate and inspire."
+      "\"Summers on Shavano\" is a love letter to Colorado summers in the high country, when the wildflowers open and the hummingbirds come zipping through. A ruby-throated hummingbird hovers in front of a blazing flower, drinking in the sweetness of a season that never lasts long enough up on the mountain.",
+      "Rays of holographic light burst out behind the bird like the summer sun coming over the peak. Under blacklight the feathers turn electric green and the flower glows hot orange."
     ],
-    "bullets": [
-      "Vibrant 8x10 art print featuring a neon hummingbird design.",
-      "High-quality print capturing intricate details and vivid colors.",
-      "Perfect for adding a splash of color and energy to any space."
-    ],
+    "bullets": [],
     "images": [
       {
         "src": "/assets/paintings/2025-26/summers-on-shavano-1.jpg",
@@ -1260,7 +1263,8 @@
     "slug": "gamma-ray",
     "title": "Gamma Ray",
     "description": [
-      "16”x20”"
+      "\"Gamma Ray\" captures a burst of pure energy. A glowing form rises out of the center of the canvas, its mushroom-like crown blasting light outward, surrounded by the Roman numeral XVII, the number of the Star card, a symbol of hope and renewal.",
+      "In daylight it crackles with black, white and fiery orange. Under blacklight the beams turn neon teal and the whole piece radiates like it is giving off its own light. Original painting, 16\" x 20\"."
     ],
     "bullets": [],
     "images": [
@@ -1347,7 +1351,8 @@
     "slug": "double-vision",
     "title": "Double Vision",
     "description": [
-      "16”x20”"
+      "\"Double Vision\" plays with the idea of seeing two worlds at once. A coiling serpent shaped like an S carries an open eye, while beams of neon light cut through the canvas like two realities overlapping.",
+      "In daylight it is a riot of rainbow geometry. Under blacklight the serpent turns deep indigo and the background lights up acid green, so you really do get two paintings in one. Original painting, 16\" x 20\"."
     ],
     "bullets": [],
     "images": [
@@ -1520,7 +1525,10 @@
   {
     "slug": "moon",
     "title": "Moon",
-    "description": [],
+    "description": [
+      "\"Moon\" is a study in texture. A heavy, sculpted silver moon hangs in a sky of thick, swirling blue brushstrokes, the paint built up so the surface catches light like real lunar rock.",
+      "It is a quiet, meditative piece that brings the pull of the night sky into your space."
+    ],
     "bullets": [],
     "images": [
       {
@@ -1561,7 +1569,10 @@
   {
     "slug": "birdhouse",
     "title": "Birdhouse",
-    "description": [],
+    "description": [
+      "\"Birdhouse\" is a layered, woven abstract. Strips of pattern and color are stacked like the slats of a nest, with frenzied strokes of paint building a home from scraps the way a bird would.",
+      "Under blacklight the layers separate into glowing threads of neon green, pink and orange, and the piece seems to vibrate on the wall."
+    ],
     "bullets": [],
     "images": [
       {
@@ -1625,7 +1636,10 @@
   {
     "slug": "vulva",
     "title": "Vulva",
-    "description": [],
+    "description": [
+      "\"Vulva\" honors the source of all life, the gateway every one of us came through. Raw, layered strokes of color burst through a lattice of bold bars, a celebration of creation, birth and the sacred feminine.",
+      "Under blacklight the hidden layers glow hot pink, orange and neon blue."
+    ],
     "bullets": [],
     "images": [
       {
@@ -1689,7 +1703,10 @@
   {
     "slug": "face",
     "title": "Face",
-    "description": [],
+    "description": [
+      "\"Face\" is a sculpted portrait made of flowing lines, with eyes, nose and lips carved out of thick paint and outlined in candy colors. Look at it long enough and the features shift and rearrange, the way a face changes depending on who is looking.",
+      "Under blacklight the outlines light up neon pink, blue and green and the face seems to float off the canvas."
+    ],
     "bullets": [],
     "images": [
       {
@@ -1753,7 +1770,10 @@
   {
     "slug": "traffic",
     "title": "Traffic",
-    "description": [],
+    "description": [
+      "\"Traffic\" is a big neon X crossing a field of stacked bars, part stop sign, part crossroads. It captures the feeling of being stuck between lanes and the moment you finally choose your direction.",
+      "In daylight it reads black, white and silver. Under blacklight the X ignites in rainbow color over glowing blue."
+    ],
     "bullets": [],
     "images": [
       {
@@ -1817,7 +1837,10 @@
   {
     "slug": "kafree",
     "title": "Kafree",
-    "description": [],
+    "description": [
+      "\"Kafree\" is a radiant mask of a skull crowned in green rays, with a strand of DNA running down its center like a spine of light. It speaks to what we inherit and what we choose to pass on, the code that connects ancestors to the living.",
+      "Under blacklight the mask glows a fiery orange inside a halo of neon green."
+    ],
     "bullets": [],
     "images": [
       {

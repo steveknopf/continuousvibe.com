@@ -6,7 +6,7 @@
     "price": 300,
     "stock": null,
     "description": [
-      "Its a motto!"
+      "Grip It N Rip It is a motto for going all in. Whatever you are about to send, ride, paint or try for the first time, grab hold and give it everything. Bold black letters over a blaze of golden flames, ready for your board, helmet, toolbox or anywhere that needs a little courage."
     ],
     "images": [
       {
@@ -16,10 +16,10 @@
         "height": 736
       },
       {
-        "src": "/assets/stickers/grip-it-n-rip-it-sticker-2.jpg",
-        "alt": "Grip It N Rip It",
-        "width": 1000,
-        "height": 940
+        "src": "/assets/stickers/sticker-pack.jpg",
+        "alt": "Grip It N Rip It with the other Continuous Vibe stickers",
+        "width": 1435,
+        "height": 1435
       }
     ]
   },
@@ -30,7 +30,7 @@
     "price": 300,
     "stock": null,
     "description": [
-      "Achievement unlocked Continuous vibe!!!  Let the world know you’re no longer a temporary vibe you’ve unlocked continuous vibe status."
+      "Achievement unlocked: Continuous Vibe! Let the world know you're no longer a temporary vibe. You've unlocked continuous vibe status. Flaming letters and an open padlock on a bold red circle, made to show off your new level."
     ],
     "images": [
       {
@@ -40,10 +40,10 @@
         "height": 975
       },
       {
-        "src": "/assets/stickers/continuous-vibe-unlocked-2.jpg",
-        "alt": "Continuous Vibe Unlocked",
-        "width": 1000,
-        "height": 940
+        "src": "/assets/stickers/sticker-pack.jpg",
+        "alt": "Continuous Vibe Unlocked with the other Continuous Vibe stickers",
+        "width": 1435,
+        "height": 1435
       }
     ]
   },
@@ -54,7 +54,7 @@
     "price": 300,
     "stock": null,
     "description": [
-      "Let people know your a type of human with this unique Human Type sticker."
+      "Let people know you're a type of human. The Human Type sticker borrows the look of an old TV test pattern, with color bars and glitchy type, for the moment the broadcast cuts out and the real you comes through."
     ],
     "images": [
       {
@@ -64,10 +64,10 @@
         "height": 932
       },
       {
-        "src": "/assets/stickers/human-type-sticker-2.jpg",
-        "alt": "Human Type",
-        "width": 1000,
-        "height": 940
+        "src": "/assets/stickers/sticker-pack.jpg",
+        "alt": "Human Type with the other Continuous Vibe stickers",
+        "width": 1435,
+        "height": 1435
       }
     ]
   },
@@ -78,7 +78,7 @@
     "price": 300,
     "stock": null,
     "description": [
-      "Stickers guaranteed to improve the vibe."
+      "Stickers guaranteed to improve the vibe. The original Continuous Vibe smiley in sunshine yellow, the same face you'll find on the logo, ready to put a grin on your laptop, water bottle or car."
     ],
     "images": [
       {
@@ -88,10 +88,34 @@
         "height": 1000
       },
       {
-        "src": "/assets/stickers/continuous-vibe-smile-2.jpg",
-        "alt": "Continuous Vibe Smile",
+        "src": "/assets/stickers/sticker-pack.jpg",
+        "alt": "Continuous Vibe Smile with the other Continuous Vibe stickers",
+        "width": 1435,
+        "height": 1435
+      }
+    ]
+  },
+  {
+    "slug": "its-a-lifestyle-sticker",
+    "title": "It's a Lifestyle",
+    "category": "stickers",
+    "price": 300,
+    "stock": null,
+    "description": [
+      "Continuous Vibe isn't a mood, it's a lifestyle. Wavy letters over a wild leopard-print background, made for your laptop, water bottle, cooler or anywhere that needs a reminder to keep the vibe going."
+    ],
+    "images": [
+      {
+        "src": "/assets/stickers/its-a-lifestyle-sticker-1.jpg",
+        "alt": "It's a Lifestyle",
         "width": 1000,
-        "height": 940
+        "height": 749
+      },
+      {
+        "src": "/assets/stickers/sticker-pack.jpg",
+        "alt": "It's a Lifestyle with the other Continuous Vibe stickers",
+        "width": 1435,
+        "height": 1435
       }
     ]
   },
